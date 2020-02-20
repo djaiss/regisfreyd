@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="title" content="Regis Freyd">
+  <meta name="description" content="Regis Freyd’s Personal Website">
+  <meta name="author" content="Regis Freyd">
+  <link rel="canonical" href="https://www.regisfreyd.com/">
+  <link rel="home" href="https://regisfreyd.com">
+  <link href="/blog/feed.atom" type="application/atom+xml" rel="alternate" title="Regis Freyd’s Personal Website Atom Feed">
+
+  <!-- favicon -->
+  <link rel="icon" href="/assets/img/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon-32.png">
+
+  <!-- meta data -->
+  <meta property="og:site_name" content="Regis Freyd" />
+  <meta property="og:title" content="Getting Started | Regis Freyd’s Personal Website" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://regisfreyd.com/blog/getting-started" />
+  <meta property="og:description" content="Regis Freyd’s Personal Website" />
+  <meta property="twitter:site" content="@djaiss">
+
+  <title>Getting Started | Regis Freyd’s Personal Website</title>
+
+      <meta property="og:title" content="Getting Started" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://regisfreyd.com/blog/getting-started"/>
+    <meta property="og:description" content="Getting started with the Jigsaw blog starter template" />
+
+    <!-- Insert analytics code here -->
+  
+  <link rel="stylesheet" href="/assets/build/css/main.css?id=401507ee1ced81e45472">
+
+  <script language="JavaScript">
+    function unScramble(eMail1, eMail2, linkText, subjectText, statusText) {
+      var a, b, c, d, e;
+      a = eMail1;
+      c = linkText;
+      b = eMail2.substring(0, eMail2.length - 5);
+      if (subjectText != "") {
+        d = "?subject=" + escape(subjectText);
+      } else {
+        d = "";
+      }
+      if (statusText != "") {
+        e = " onMouseOver=\"top.status=\'" + statusText +
+          "\'\;return true\;\" onMouseOut=\"top.status=\'\'\;return true\;\"";
+      } else {
+        e = "";
+      }
+      document.write("<A HREF=\"mai" + "lto:" + a + "@" + b + d + "\"" + e + ">" + c + "</A>");
+    }
+  </script>
+</head>
+
+<body>
+  <main role="main" class="mw6 center mt5 ph3 ph0-ns">
+                <img src="/assets/img/post-cover-image-2.png" alt="Getting Started cover image" class="mb-2">
+    
+    <h1 class="leading-none mb-2">Getting Started</h1>
+
+    <p class="text-gray-700 text-xl md:mt-0">Author Name  •  December 25, 2018</p>
+
+                        <a
+                href="/blog/categories/configuration"
+                title="View posts in configuration"
+                class="inline-block bg-gray-300 hover:bg-blue-200 leading-loose tracking-wide text-gray-800 uppercase text-xs font-semibold rounded mr-4 px-3 pt-px"
+            >configuration</a>
+            
+    <div class="border-b border-blue-200 mb-10 pb-4" v-pre>
+        <p>This is a starter template for creating a beautiful, customizable blog with minimal effort. You’ll only have to change a few settings and you’re ready to go.<!-- more --></p>
+
+<h2>Configuration</h2>
+
+<p>As with all Jigsaw sites, configuration settings can be found in <code>config.php</code>; you can update the variables in that file with settings specific to your site. You can also add new configuration variables there to use across your site; take a look at the <a href="http://jigsaw.tighten.co/docs/site-variables/">Jigsaw documentation</a> to learn more.</p>
+
+<pre><code class="php">// config.php
+return [
+    'baseUrl' =&gt; 'https://my-awesome-jigsaw-site.com/',
+    'production' =&gt; false,
+    'siteName' =&gt; 'My Site',
+    'siteDescription' =&gt; 'Give your blog a boost with Jigsaw.',
+    ...
+];
+</code></pre>
+
+<blockquote>
+  <p>Tip: This configuration file is also where you’ll define any "collections" (for example, a collection of the contributors to your site, or a collection of blog posts organized by topic). Check out the official <a href="https://jigsaw.tighten.co/docs/collections/">Jigsaw documentation</a> to learn more.</p>
+</blockquote>
+
+<hr />
+
+<h3>Adding Content</h3>
+
+<p>You can write your content using a <a href="http://jigsaw.tighten.co/docs/content-other-file-types/">variety of file types</a>. By default, this starter template expects your content to be located in the <code>source/_posts/</code> folder.</p>
+
+<p>The top of each content page contains a YAML header that specifies how it should be rendered. The <code>title</code> attribute is used to dynamically generate HTML <code>title</code> and OpenGraph tags for each page. The <code>extends</code> attribute defines which parent Blade layout this content file will render with (e.g. <code>_layouts.post</code> will render with <code>source/_layouts/post.blade.php</code>), and the <code>section</code> attribute defines the Blade "section" that expects this content to be placed into it.</p>
+
+<pre><code class="yaml">---
+extends: _layouts.post
+section: content
+title: Getting Started
+date: 2018-12-25
+description: Getting started with the Jigsaw blog starter template
+cover_image: /assets/img/post-cover-image-2.png
+featured: true
+---
+</code></pre>
+
+<h3>Adding Assets</h3>
+
+<p>Any assets that need to be compiled (such as JavaScript, Less, or Sass files) can be added to the <code>source/_assets/</code> directory, and Laravel Mix will process them when running <code>npm run local</code> or <code>npm run production</code>. The processed assets will be stored in <code>/source/assets/build/</code> (note there is no underscore on this second <code>assets</code> directory).</p>
+
+<p>Then, when Jigsaw builds your site, the entire <code>/source/assets/</code> directory containing your built files (and any other directories containing static assets, such as images or fonts, that you choose to store there) will be copied to the destination build folders (<code>build_local</code>, on your local machine).</p>
+
+<p>Files that don't require processing (such as images and fonts) can be added directly to <code>/source/assets/</code>.</p>
+
+<p><a href="http://jigsaw.tighten.co/docs/compiling-assets/">Read more about compiling assets in Jigsaw using Laravel Mix.</a></p>
+
+<hr />
+
+<h2 id="getting-started-building-your-site">Building Your Site</h2>
+
+<p>Now that you’ve edited your configuration variables and know how to customize your styles and content, let’s build the site.</p>
+
+<pre><code class="bash"># build static files with Jigsaw
+./vendor/bin/jigsaw build
+
+# compile assets with Laravel Mix
+# options: dev, staging, production
+npm run dev
+</code></pre>
+    </div>
+
+    <nav class="flex justify-between text-sm md:text-base">
+        <div>
+                            <a href="https://regisfreyd.com/blog/customizing-your-site" title="Older Post: Customizing Your Site">
+                    &LeftArrow; Customizing Your Site
+                </a>
+                    </div>
+
+        <div>
+                    </div>
+    </nav>
+  </main>
+
+    <!-- Fathom - simple website analytics - https://usefathom.com -->
+  <script>
+    (function(f, a, t, h, o, m) {
+      a[h] = a[h] || function() {
+        (a[h].q = a[h].q || []).push(arguments)
+      };
+      o = f.createElement('script'),
+        m = f.getElementsByTagName('script')[0];
+      o.async = 1;
+      o.src = t;
+      o.id = 'fathom-script';
+      m.parentNode.insertBefore(o, m)
+    })(document, window, 'https://cdn.usefathom.com/tracker.js', 'fathom');
+    fathom('set', 'siteId', 'HHOPDHUN');
+    fathom('trackPageview');
+  </script>
+  <!-- / Fathom -->
+  </body>
+
+</html>
