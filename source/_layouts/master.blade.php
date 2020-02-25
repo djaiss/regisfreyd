@@ -23,6 +23,7 @@
   <meta property="og:url" content="{{ $page->getUrl() }}" />
   <meta property="og:description" content="{{ $page->siteDescription }}" />
   <meta property="twitter:site" content="@djaiss">
+  <meta property="twitter:creator" content="@djaiss">
 
   <title>{{ $page->title ?  $page->title . ' | ' : '' }}{{ $page->siteName }}</title>
 
