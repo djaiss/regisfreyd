@@ -1,50 +1,57 @@
 @extends('_layouts.master')
 
 @push('meta')
-    <meta property="og:title" content="{{ $page->title }}" />
-    <meta property="og:type" content="article" />
-    <meta property="og:url" content="{{ $page->getUrl() }}"/>
-    <meta property="og:description" content="{{ $page->description }}" />
+<meta property="og:title" content="{{ $page->title }}" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="{{ $page->getUrl() }}" />
+<meta property="og:image:height" content="628">
+<meta property="og:image:width" content="1200">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="{{ $page->description }}" />
+<meta name="twitter:title" content="{{ $page->title }}" />
+<meta name="twitter:description" content="{{ $page->baseUrl.'/assets/img/post/'.$page->slug }}.png" />
 @endpush
 
 @section('body')
-    @if ($page->cover_image)
-        <img src="{{ $page->cover_image }}" alt="{{ $page->title }} cover image" class="mb-2">
-    @endif
+<div class="blog-post h-entry mb5 bb pb4">
+  <div class="mb4">&LeftArrow; <a href="/">Back to homepage</a></div>
+  <h1 class="p-name">{{ $page->title }}</h1>
+  <p class="f6 mb4">Written by <a href="{{ $page->twitter_author }}" class="p-author h-card">{{ $page->author }}</a> and published on <span class="dt-published" datetime="{{ date('Y-m-d 12:00:00', $page->date) }}">{{ date('F j, Y', $page->date) }}</span></p>
 
-    <h1 class="leading-none mb-2">{{ $page->title }}</h1>
+  @if ($page->cover_image)
+  <img src="{{ $page->cover_image }}" alt="{{ $page->title }} cover image" class="mb-2">
+  @endif
 
-    <p class="text-gray-700 text-xl md:mt-0">{{ $page->author }}  •  {{ date('F j, Y', $page->date) }}</p>
+  @if ($page->categories)
+  @foreach ($page->categories as $i => $category)
+  <a href="{{ '/blog/categories/' . $category }}" title="View posts in {{ $category }}" class="inline-block bg-gray-300 hover:bg-blue-200 leading-loose tracking-wide text-gray-800 uppercase text-xs font-semibold rounded mr-4 px-3 pt-px">{{ $category }}</a>
+  @endforeach
+  @endif
 
-    @if ($page->categories)
-        @foreach ($page->categories as $i => $category)
-            <a
-                href="{{ '/blog/categories/' . $category }}"
-                title="View posts in {{ $category }}"
-                class="inline-block bg-gray-300 hover:bg-blue-200 leading-loose tracking-wide text-gray-800 uppercase text-xs font-semibold rounded mr-4 px-3 pt-px"
-            >{{ $category }}</a>
-        @endforeach
-    @endif
+  <div class="e-content">
+    @yield('content')
+  </div>
 
-    <div class="border-b border-blue-200 mb-10 pb-4" v-pre>
-        @yield('content')
+  <nav class="">
+    <div>
+      @if ($next = $page->getNext())
+      <a href="{{ $next->getUrl() }}" title="Older Post: {{ $next->title }}">
+        &LeftArrow; {{ $next->title }}
+      </a>
+      @endif
     </div>
 
-    <nav class="flex justify-between text-sm md:text-base">
-        <div>
-            @if ($next = $page->getNext())
-                <a href="{{ $next->getUrl() }}" title="Older Post: {{ $next->title }}">
-                    &LeftArrow; {{ $next->title }}
-                </a>
-            @endif
-        </div>
+    <div>
+      @if ($previous = $page->getPrevious())
+      <a href="{{ $previous->getUrl() }}" title="Newer Post: {{ $previous->title }}">
+        {{ $previous->title }} &RightArrow;
+      </a>
+      @endif
+    </div>
+  </nav>
+</div>
 
-        <div>
-            @if ($previous = $page->getPrevious())
-                <a href="{{ $previous->getUrl() }}" title="Newer Post: {{ $previous->title }}">
-                    {{ $previous->title }} &RightArrow;
-                </a>
-            @endif
-        </div>
-    </nav>
+<p class="tc mb2">Hi from Canada 🇨🇦</p>
+<p class="f6 lh-copy">You are not being tracked. Analytics of this site are provided by <a href="https://usefathom.com/ref/APPNBJ">Fathom</a>, a privacy-friendly analytics tool.</p>
+
 @endsection

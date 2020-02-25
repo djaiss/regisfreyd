@@ -8,14 +8,15 @@ return [
     'siteTitle' => 'Regis Freyd',
     'siteName' => 'Regis Freyd’s Personal Website',
     'siteDescription' => 'Regis Freyd’s Personal Website',
-    'siteAuthor' => 'Author Name',
+    'siteAuthor' => 'Regis Freyd',
 
     // collections
     'collections' => [
         'posts' => [
-            'author' => 'Author Name', // Default author, if not provided in a post
+            'author' => 'Regis Freyd', // Default author, if not provided in a post
+            'twitter_author' => 'https://twitter.com/djaiss',
             'sort' => '-date',
-            'path' => 'blog/{filename}',
+            'path' => 'blog/{slug}',
         ],
         'categories' => [
             'path' => '/blog/categories/{filename}',
