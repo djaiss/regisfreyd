@@ -2,72 +2,42 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
  <url>
   <loc>https://regisfreyd.com/blog</loc>
-  <lastmod>2020-02-20T01:09:12+00:00</lastmod>
-  <changefreq>daily</changefreq>
- </url>
- <url>
-  <loc>https://regisfreyd.com/blog/2</loc>
-  <lastmod>2020-02-20T01:09:12+00:00</lastmod>
+  <lastmod>2020-02-25T23:23:51+00:00</lastmod>
   <changefreq>daily</changefreq>
  </url>
  <url>
   <loc>https://regisfreyd.com/blog/categories/configuration</loc>
-  <lastmod>2020-02-20T01:09:12+00:00</lastmod>
+  <lastmod>2020-02-25T23:23:51+00:00</lastmod>
   <changefreq>daily</changefreq>
  </url>
  <url>
   <loc>https://regisfreyd.com/blog/categories/feature</loc>
-  <lastmod>2020-02-20T01:09:12+00:00</lastmod>
+  <lastmod>2020-02-25T23:23:51+00:00</lastmod>
   <changefreq>daily</changefreq>
  </url>
  <url>
   <loc>https://regisfreyd.com</loc>
-  <lastmod>2020-02-20T01:09:12+00:00</lastmod>
+  <lastmod>2020-02-25T23:23:51+00:00</lastmod>
   <changefreq>daily</changefreq>
  </url>
  <url>
   <loc>https://regisfreyd.com/about</loc>
-  <lastmod>2020-02-20T01:09:12+00:00</lastmod>
+  <lastmod>2020-02-25T23:23:51+00:00</lastmod>
   <changefreq>daily</changefreq>
  </url>
  <url>
-  <loc>https://regisfreyd.com/blog/custom-404-page</loc>
-  <lastmod>2020-02-20T01:09:12+00:00</lastmod>
-  <changefreq>daily</changefreq>
- </url>
- <url>
-  <loc>https://regisfreyd.com/blog/getting-started</loc>
-  <lastmod>2020-02-20T01:09:12+00:00</lastmod>
-  <changefreq>daily</changefreq>
- </url>
- <url>
-  <loc>https://regisfreyd.com/blog/fuse-search</loc>
-  <lastmod>2020-02-20T01:09:12+00:00</lastmod>
-  <changefreq>daily</changefreq>
- </url>
- <url>
-  <loc>https://regisfreyd.com/blog/mailchimp-newsletters</loc>
-  <lastmod>2020-02-20T01:09:12+00:00</lastmod>
-  <changefreq>daily</changefreq>
- </url>
- <url>
-  <loc>https://regisfreyd.com/blog/customizing-your-site</loc>
-  <lastmod>2020-02-20T01:09:12+00:00</lastmod>
-  <changefreq>daily</changefreq>
- </url>
- <url>
-  <loc>https://regisfreyd.com/blog/my-first-blog-post</loc>
-  <lastmod>2020-02-20T01:09:12+00:00</lastmod>
+  <loc>https://regisfreyd.com/blog/single-point-of-contact</loc>
+  <lastmod>2020-02-25T23:23:51+00:00</lastmod>
   <changefreq>daily</changefreq>
  </url>
  <url>
   <loc>https://regisfreyd.com/blog/feed.atom</loc>
-  <lastmod>2020-02-20T01:09:12+00:00</lastmod>
+  <lastmod>2020-02-25T23:23:51+00:00</lastmod>
   <changefreq>daily</changefreq>
  </url>
  <url>
   <loc>https://regisfreyd.com/contact</loc>
-  <lastmod>2020-02-20T01:09:12+00:00</lastmod>
+  <lastmod>2020-02-25T23:23:51+00:00</lastmod>
   <changefreq>daily</changefreq>
  </url>
 </urlset>

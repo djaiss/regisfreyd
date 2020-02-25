@@ -3,9 +3,21 @@
 @section('body')
 
 <p>Hi 👋</p>
-<p class="lh-copy">I’m Regis Freyd, a product designer and full stack developer based in Montréal (some call this role a “maker”), and very active in the open source community.</p>
+<p class="lh-copy">I’m Regis Freyd, product manager by career and product designer/full stack developer by passion based in Montréal, and very active in the open source community.</p>
 <p class="lh-copy">My tools of choice are Figma, Laravel, Vue and a good sense of pragmatism.</p>
 <p class="lh-copy mb5">For the past 15 years, I’ve worked at major companies as product manager, and shipped several side projects, some of them being pretty successful.</p>
+
+<h2 class="fw4 f4">Latest posts</h2>
+
+@foreach ($posts->where('featured', false)->take(6)->chunk(2) as $row)
+<ul class="list mb5 pl0">
+  @foreach ($row as $post)
+  <li class="h-entry">
+    <a href="{{ $post->getUrl() }}" title="Read more - {{ $post->title }}" class="p-name">{{ $post->title }}</a>
+  </li>
+  @endforeach
+</ul>
+@endforeach
 
 <h2 class="fw4 f4">My most popular repositories</h2>
 

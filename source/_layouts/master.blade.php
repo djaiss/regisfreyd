@@ -8,7 +8,7 @@
   <meta name="title" content="{{ $page->meta_title ?? $page->siteTitle }}">
   <meta name="description" content="{{ $page->meta_description ?? $page->siteDescription }}">
   <meta name="author" content="Regis Freyd">
-  <link rel="canonical" href="https://www.regisfreyd.com/">
+  <link rel="canonical" href="{{ $page->getUrl() }}">
   <link rel="home" href="{{ $page->baseUrl }}">
   <link href="/blog/feed.atom" type="application/atom+xml" rel="alternate" title="{{ $page->siteName }} Atom Feed">
 
