@@ -6,8 +6,8 @@ return [
     'baseUrl' => '',
     'production' => false,
     'siteTitle' => 'Regis Freyd',
-    'siteName' => 'Regis Freyd’s Personal Website',
-    'siteDescription' => 'Regis Freyd’s Personal Website',
+    'siteName' => 'Regis Freyd',
+    'siteDescription' => 'Regis Freyd',
     'siteAuthor' => 'Regis Freyd',
 
     // collections
