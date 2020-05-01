@@ -4,6 +4,7 @@
 <meta property="og:title" content="{{ $page->title }}" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="{{ $page->getUrl() }}" />
+<meta property="og:image" content="{{ $page->baseUrl.'/assets/img/post/'.$page->slug }}.png" />
 <meta property="og:image:height" content="628">
 <meta property="og:image:width" content="1200">
 
