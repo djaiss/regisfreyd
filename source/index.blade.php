@@ -3,17 +3,16 @@
 @section('body')
 
 <p>Hi 👋</p>
-<p class="lh-copy">I’m Regis Freyd, product manager by career and product designer/full stack developer by passion based in Montréal, and very active in the open source community.</p>
-<p class="lh-copy">My tools of choice are Figma, Laravel, Vue and a good sense of pragmatism.</p>
-<p class="lh-copy mb5">For the past 15 years, I’ve worked at major companies as product manager, and shipped several side projects, some of them being pretty successful.</p>
+<p class="lh-copy">I’m Regis Freyd, full stack developer and product manager based in Montréal, and quite active in <a href="https://github.com/djaiss">the open source community</a>.</p>
+<p class="lh-copy mb5">For the past 15 years, I’ve worked at major companies as product manager, and shipped several side projects, used by ten of thousands of daily users.</p>
 
 <h2 class="fw4 f4">Latest posts</h2>
 
 @foreach ($posts->where('featured', false)->take(6)->chunk(2) as $row)
 <ul class="list mb5 pl0">
   @foreach ($row as $post)
-  <li class="h-entry">
-    <a href="{{ $post->getUrl() }}" title="Read more - {{ $post->title }}" class="p-name">{{ $post->title }}</a>
+  <li class="h-entry mb3 lh-copy">
+    <a href="{{ $post->getUrl() }}" title="Read more - {{ $post->title }}" class="p-name f4">{{ $post->title }}</a>
   </li>
   @endforeach
 </ul>

@@ -18,14 +18,14 @@
 
   <!-- meta data -->
   <meta property="og:site_name" content="Regis Freyd" />
-  <meta property="og:title" content="{{ $page->title ?  $page->title . ' | ' : '' }}{{ $page->siteName }}" />
+  <meta property="og:title" content="{{ $page->title }}" />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="{{ $page->getUrl() }}" />
   <meta property="og:description" content="{{ $page->siteDescription }}" />
   <meta property="twitter:site" content="@djaiss">
   <meta property="twitter:creator" content="@djaiss">
 
-  <title>{{ $page->title ?  $page->title . ' | ' : '' }}{{ $page->siteName }}</title>
+  <title>{{ $page->title ?  $page->title.' | ' : '' }}{{ $page->siteName }}</title>
 
   @stack('meta')
 
@@ -58,7 +58,7 @@
 </head>
 
 <body>
-  <main role="main" class="mw6 center mt5 ph3 ph0-ns">
+  <main role="main" class="mw7 center mt5 ph3 ph0-ns">
     @yield('body')
   </main>
 
