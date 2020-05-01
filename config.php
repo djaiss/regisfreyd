@@ -16,7 +16,7 @@ return [
             'author' => 'Regis Freyd', // Default author, if not provided in a post
             'twitter_author' => 'https://twitter.com/djaiss',
             'sort' => '-date',
-            'path' => 'blog/{slug}',
+            'path' => '{slug}',
         ],
         'categories' => [
             'path' => '/blog/categories/{filename}',
