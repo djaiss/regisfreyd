@@ -5,7 +5,8 @@
 @import '~highlight.js/styles/a11y-light.css';
 
 body {
-  background-color: #f4f4f4;
+  background-color: #fff;
+  color: #2a2f35;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
@@ -30,8 +31,33 @@ body {
   box-shadow: 0 1px 2px rgba(0,0,0,0.07);
 }
 
+a {
+  color: #1d78bd;
+}
+
 .blog-post {
+  h2 {
+    font-weight: 300;
+    margin-top: 60px;
+    line-height: 1.5;
+  }
+
+  h3 {
+    margin-top: 40px;
+    font-weight: 300;
+    line-height: 1.5;
+  }
+
   p {
+    line-height: 1.5;
+  }
+
+  ul {
+    margin-bottom: 50px;
+  }
+
+  li {
+    margin-bottom: 5px;
     line-height: 1.5;
   }
 }

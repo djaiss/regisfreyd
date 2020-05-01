@@ -14,10 +14,10 @@
 @endpush
 
 @section('body')
-<div class="blog-post h-entry mb5 bb pb4">
+<div class="blog-post h-entry mb5 bb b--black-20 pb4">
   <div class="mb4">&LeftArrow; <a href="/">Back to homepage</a></div>
-  <h1 class="p-name">{{ $page->title }}</h1>
-  <p class="f6 mb4">Written by <a href="{{ $page->twitter_author }}" class="p-author h-card">{{ $page->author }}</a> and published on <span class="dt-published" datetime="{{ date('Y-m-d 12:00:00', $page->date) }}">{{ date('F j, Y', $page->date) }}</span></p>
+  <h1 class="p-name mb1">{{ $page->title }}</h1>
+  <p class="f6 mb4 mt0 gray">Written by <a href="{{ $page->twitter_author }}" class="p-author h-card">{{ $page->author }}</a> and published on <span class="dt-published" datetime="{{ date('Y-m-d 12:00:00', $page->date) }}">{{ date('F j, Y', $page->date) }}</span></p>
 
   @if ($page->cover_image)
   <img src="{{ $page->cover_image }}" alt="{{ $page->title }} cover image" class="mb-2">
@@ -29,11 +29,18 @@
   @endforeach
   @endif
 
-  <div class="e-content">
+  <div class="f4">
     @yield('content')
   </div>
 
-  <nav class="">
+  <div class="tc mt6 bb b--black-20 pb4 mb4">
+    <div class="">
+      <img src="/assets/img/avatar.png" alt="avatar regis freyd">
+    </div>
+    <p>Regis Freyd is a full-stack developer and product manager living in Montreal.</p>
+  </div>
+
+  <nav class="flex justify-between">
     <div>
       @if ($next = $page->getNext())
       <a href="{{ $next->getUrl() }}" title="Older Post: {{ $next->title }}">
