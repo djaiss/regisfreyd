@@ -3,14 +3,14 @@
     <title>Regis Freyd</title>
     <link href="https://regisfreyd.com" />
     <link type="application/atom+xml" rel="self" href="https://regisfreyd.com/blog/feed.atom" />
-    <updated>2020-05-01T21:33:29+00:00</updated>
+    <updated>2020-05-01T21:53:32+00:00</updated>
     <id>https://regisfreyd.com/blog/feed.atom</id>
     <author>
         <name>Regis Freyd</name>
     </author>
                 <entry>
-    <id>https://regisfreyd.com/blog/apple-music-is-better</id>
-    <link type="text/html" rel="alternate" href="https://regisfreyd.com/blog/apple-music-is-better" />
+    <id>https://regisfreyd.com/apple-music-is-better</id>
+    <link type="text/html" rel="alternate" href="https://regisfreyd.com/apple-music-is-better" />
     <title>Apple Music is better</title>
     <published>2020-05-02T00:00:00+00:00</published>
     <updated>2020-05-02T00:00:00+00:00</updated>
@@ -115,8 +115,8 @@
     ]]></content>
 </entry>
             <entry>
-    <id>https://regisfreyd.com/blog/single-point-of-contact</id>
-    <link type="text/html" rel="alternate" href="https://regisfreyd.com/blog/single-point-of-contact" />
+    <id>https://regisfreyd.com/single-point-of-contact</id>
+    <link type="text/html" rel="alternate" href="https://regisfreyd.com/single-point-of-contact" />
     <title>Have a single point of contact for your side project</title>
     <published>2020-02-25T00:00:00+00:00</published>
     <updated>2020-02-25T00:00:00+00:00</updated>
