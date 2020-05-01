@@ -105,7 +105,7 @@ _large_image">
     <div class="">
       <img src="/assets/img/avatar.png" alt="avatar regis freyd">
     </div>
-    <p>Regis Freyd is a full-stack developer and product manager living in Montreal.</p>
+    <p>Regis Freyd is a full-stack developer and product manager living in Montreal. He’s the author of <a href="https://github.com/monicahq/monica">Monica</a>, a popular personal CRM. You should <a href="https://twitter.com/djaiss">follow him on Twitter</a>.</p>
   </div>
 
   <nav class="flex justify-between">
