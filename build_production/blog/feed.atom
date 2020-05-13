@@ -3,7 +3,7 @@
     <title>Regis Freyd</title>
     <link href="https://regisfreyd.com" />
     <link type="application/atom+xml" rel="self" href="https://regisfreyd.com/blog/feed.atom" />
-    <updated>2020-05-02T22:09:12+00:00</updated>
+    <updated>2020-05-13T11:58:01+00:00</updated>
     <id>https://regisfreyd.com/blog/feed.atom</id>
     <author>
         <name>Regis Freyd</name>
@@ -168,6 +168,15 @@ After years of working with Sublime Text and......</summary>
 <li><a href="https://marketplace.visualstudio.com/items?itemName=WakaTime.vscode-wakatime">Wakatime</a>: I've been using Wakatime to automatically track the time I spent in my code editor on a weekly basis. The free plan sends me an email every week about the number of hours I spend in each of my projects. Right now, as everything I do is done on the side, I spend around 20 hours per week on my projects.</li>
 </ul>
 
+<h2>Development environment</h2>
+
+<ul>
+<li>I develop mainly in PHP, so I use <a href="https://laravel.com/docs/master/valet">Valet</a> to take care of whatever is needed to make everything works locally. I used to run Valet+, but it caused errors when I tried to upgrade the PHP versions.</li>
+<li>I use MySQL and SQLite equally. Locally, apps run on MySQL, but test suites are run against SQLite for performance reasons (it’s probably at least 10 times faster). To make sure tests are also working fine with MySQL, I have two GitHub actions, one using MySQL and the other SQLite, that give me an additional peace of mind.</li>
+<li>I used to use <a href="https://sequelpro.com/">Sequel Pro</a> to manage databases, but now I use <a href="https://www.tableplus.io/">Table Plus</a> as I have to manage SQLite databases now. Also, Table Plus has constant updates.</li>
+<li>I mainly use <a href="https://desktop.github.com/">GitHub Desktop</a> to pull and push changes.</li>
+</ul>
+
 <h3>Terminal</h3>
 
 <p>I use <a href="https://www.iterm2.com/">iTerm2</a> as my terminal of choice. It still uses Bash, unfortunately, but I know I’ll have to migrate to ZSH when I’ll migrate to a new computer.</p>
@@ -182,8 +191,25 @@ After years of working with Sublime Text and......</summary>
 
 <ul>
 <li>I don't like dark mode in macOS. So I've simply disabled it entirely.</li>
-<li><p>The dock is always on the left part of the screen, and is always hidden.</p></li>
-<li><p>Whenever I can, I install all softwares with <a href="https://github.com/Homebrew/homebrew-cask">brew cask</a>. If you know Homebrew, Cask works in a similar fashion. For instance, to install 1Password, you would just need to run <code>brew cask install 1password</code> and the install process is handled automatically. But the really good part, is that you can actually automate this process in a dotfile. That way when you setup a new machine, you just run your script and all is set for you.</p></li>
+<li>The dock is always on the left part of the screen, and is always hidden.</li>
+<li>I <a href="https://gist.github.com/djaiss/ddf25f26aa62386eeadf18264535288d">disable or change a lot of default features</a> that are in macOS through a bunch of commands run into the terminal.</li>
+</ul>
+
+<h3>Softwares</h3>
+
+<ul>
+<li>Whenever I can, I install all softwares with <a href="https://github.com/Homebrew/homebrew-cask">brew cask</a>. If you know Homebrew, Cask works in a similar fashion. For instance, to install 1Password, you would just need to run <code>brew cask install 1password</code> and the install process is handled automatically. But the really good part is that you can actually automate this process in a dotfile. That way when you setup a new machine, you just run your script and all is set for you. <a href="https://gist.github.com/djaiss/e46e707769b216402768f1ec1c9d3d2e">This is the script</a> that I use for this purpose.</li>
+<li>Speaking of <a href="https://1password.com/">1password</a>. I don't think we have to explain why having a password manager in 2020 is essential. I’ve been a very happy 1password subscriber for years now, and don't plan to switch anytime soon. The app is very elegant, very powerful and gets out of the way.</li>
+<li>I use Firefox as my main browser. The dev tools used to lag behind Chrome, but are now much better. Also, privacy.</li>
+<li>I don't use todo lists. I've tried them all, but I can't keep up with all the todos so I usually delete the clients one week after installation. I just focus on 1 or 2 tasks and move on.</li>
+<li>I use Apple Music as <a href="/apple-music-is-better">it’s much better than Spotify</a>.</li>
+<li>I use the official Twitter client.</li>
+<li><a href="https://telegram.org/">Telegram</a> is my go-to communication medium with friends and family.</li>
+<li>I use Alfred as a task launcher. It’s great, but I don't really need it.</li>
+<li>I use <a href="https://www.ergonis.com/products/typinator/">Typinator</a> (a text expander like software) and it’s awesome.</li>
+<li>I don't use a VPN, but I do use <a href="https://nextdns.io">NextDNS</a> as DNS resolver that also acts as an hosted Pi-Hole. Can't recommend it enough.</li>
+<li>I’ve been a <a href="https://fastmail.com">Fastmail</a> subscriber for 9 years now. I can't say enough good things about them. They have the best support for IMAP (if those things matter to you) and the most impressive sync mechanisms I've seen. They have an insanely fast email client on both desktop and mobile. They don't display ads once you pay. They support unlimited aliases and custom domains.</li>
+<li>I use <a href="https://bjango.com/mac/istatmenus/">iStats Menu</a> to keep track of the CPU usage and the current bandwidth usage. I don't care about how the OS manages RAM or fan spinners though. But knowing if a process destroys the CPU is really important on a laptop (or it drains the battery too much), and knowing that something in the OS takes all the bandwidth for no apparent reason is also important to me.</li>
 </ul>
     ]]></content>
 </entry>
