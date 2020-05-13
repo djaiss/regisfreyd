@@ -8,15 +8,13 @@
 
 <h2 class="fw4 f4">Latest posts</h2>
 
-@foreach ($posts->where('featured', false)->take(6)->chunk(2) as $row)
 <ul class="list mb5 pl0">
-  @foreach ($row as $post)
+  @foreach ($posts as $post)
   <li class="h-entry mb3 lh-copy">
     <a href="{{ $post->getUrl() }}" title="Read more - {{ $post->title }}" class="p-name f4">{{ $post->title }}</a>
   </li>
   @endforeach
 </ul>
-@endforeach
 
 <h2 class="fw4 f4">My most popular repositories</h2>
 
