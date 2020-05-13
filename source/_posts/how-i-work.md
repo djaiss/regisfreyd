@@ -2,7 +2,7 @@
 extends: _layouts.post
 section: content
 title: How I work (2020 edition)
-date: 2020-05-02
+date: 2020-05-13
 slug: how-i-work-2020-edition
 categories:
 description: The setup I use on a daily basis to do some work.
