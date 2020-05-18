@@ -1,5 +1,15 @@
 @extends('_layouts.master')
 
+@push('meta')
+<meta property="og:site_name" content="Regis Freyd" />
+<meta property="og:title" content="{{ $page->title }}" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="{{ $page->getUrl() }}" />
+<meta property="og:description" content="{{ $page->siteDescription }}" />
+<meta property="twitter:site" content="@djaiss">
+<meta property="twitter:creator" content="@djaiss">
+@endpush
+
 @section('body')
 
 <p>Hi 👋</p>
