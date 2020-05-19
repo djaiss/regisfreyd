@@ -16,15 +16,6 @@
   <link rel="icon" href="/assets/img/favicon-32.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon-32.png">
 
-  <!-- meta data -->
-  <meta property="og:site_name" content="Regis Freyd" />
-  <meta property="og:title" content="{{ $page->title }}" />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="{{ $page->getUrl() }}" />
-  <meta property="og:description" content="{{ $page->siteDescription }}" />
-  <meta property="twitter:site" content="@djaiss">
-  <meta property="twitter:creator" content="@djaiss">
-
   <title>{{ $page->title ?  $page->title.' | ' : '' }}{{ $page->siteName }}</title>
 
   @stack('meta')
