@@ -13,8 +13,8 @@
   <link href="/blog/feed.atom" type="application/atom+xml" rel="alternate" title="{{ $page->siteName }} Atom Feed">
 
   <!-- favicon -->
-  <link rel="icon" href="{{ $page->baseUrl }}/assets/img/favicon-32.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="{{ $page->baseUrl }}/assets/img/favicon-32.png">
+  <link rel="icon" href="/assets/img/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon-32.png">
 
   <title>{{ $page->title ?  $page->title.' | ' : '' }}{{ $page->siteName }}</title>
 
