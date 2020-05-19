@@ -13,8 +13,8 @@
   <link href="/blog/feed.atom" type="application/atom+xml" rel="alternate" title="{{ $page->siteName }} Atom Feed">
 
   <!-- favicon -->
-  <link rel="icon" href="/assets/img/favicon-32.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon-32.png">
+  <link rel="icon" href="{{ $page->baseUrl }}/assets/img/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="{{ $page->baseUrl }}/assets/img/favicon-32.png">
 
   <title>{{ $page->title ?  $page->title.' | ' : '' }}{{ $page->siteName }}</title>
 
@@ -46,6 +46,13 @@
 
 <body>
   <main role="main" class="mw7 center mt5 ph3 ph0-ns">
+    <ul class="mb5 list pa0">
+      <li class="di">
+        <a href="/" class="mr2">Home</a>
+        <a href="/about">About</a>
+      </li>
+    </ul>
+
     @yield('body')
   </main>
 

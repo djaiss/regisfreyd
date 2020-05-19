@@ -62,4 +62,7 @@ return [
     'isActive' => function ($page, $path) {
         return Str::endsWith(trimPath($page->getPath()), trimPath($path));
     },
+    'age' => function () {
+        return \Carbon\Carbon::createFromDate(1981, 10, 29)->diff(\Carbon\Carbon::now())->format('%y');
+    },
 ];
