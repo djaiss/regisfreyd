@@ -46,6 +46,13 @@
 
 <body>
   <main role="main" class="mw7 center mt5 ph3 ph0-ns">
+    <ul class="mb5 list pa0">
+      <li class="di">
+        <a href="/" class="mr2">Home</a>
+        <a href="/about">About</a>
+      </li>
+    </ul>
+
     @yield('body')
   </main>
 
