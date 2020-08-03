@@ -18,6 +18,12 @@ return [
             'sort' => '-date',
             'path' => '{slug}',
         ],
+        'zines' => [
+            'author' => 'Regis Freyd',
+            'twitter_author' => 'https://twitter.com/djaiss',
+            'sort' => '-date',
+            'path' => '/zines/{slug}',
+        ],
         'categories' => [
             'path' => '/blog/categories/{filename}',
             'posts' => function ($page, $allPosts) {
