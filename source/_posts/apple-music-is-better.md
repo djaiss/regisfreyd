@@ -1,9 +1,9 @@
 ---
 extends: _layouts.post
 section: content
-title: Apple Music is better
+title: Apple Music is better than Spotify
 date: 2020-05-02
-slug: apple-music-is-better
+slug: apple-music-is-better-than-spotify
 categories:
 description: Apple Music provides smart playlists that blow away anything that Spotify can offer.
 ---
