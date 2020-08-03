@@ -3,12 +3,107 @@
     <title>Regis Freyd</title>
     <link href="https://regisfreyd.com" />
     <link type="application/atom+xml" rel="self" href="https://regisfreyd.com/blog/feed.atom" />
-    <updated>2020-05-19T00:52:33+00:00</updated>
+    <updated>2020-08-03T19:50:55+00:00</updated>
     <id>https://regisfreyd.com/blog/feed.atom</id>
     <author>
         <name>Regis Freyd</name>
     </author>
                 <entry>
+    <id>https://regisfreyd.com/documentation-driven-development</id>
+    <link type="text/html" rel="alternate" href="https://regisfreyd.com/documentation-driven-development" />
+    <title>Documentation Driven Development</title>
+    <published>2020-08-03T00:00:00+00:00</published>
+    <updated>2020-08-03T00:00:00+00:00</updated>
+    <author>
+        <name>Regis Freyd</name>
+    </author>
+    <summary type="html">Documentation is hard and feels unrewarding. Therefore, it’s the last thing you write. When you start your project, you have a high level of motivation and this is how your development cycle looks like:
+
+
+Write feature
+Write tests
+Push features to......</summary>
+    <content type="html"><![CDATA[
+        <p>Documentation is hard and feels unrewarding. Therefore, it’s the last thing you write. When you start your project, you have a high level of motivation and this is how your development cycle looks like:</p>
+
+<ul>
+<li>Write feature</li>
+<li>Write tests</li>
+<li>Push features to production</li>
+<li>Write documentation</li>
+<li>Publish documentation</li>
+</ul>
+
+<p>After a few months, your motivation starts to decrease and your development cycle looks like this:</p>
+
+<ul>
+<li>Write feature</li>
+<li>Write tests</li>
+<li>Push features to production</li>
+<li>Write documentation</li>
+</ul>
+
+<p>Time passes. Your development cycle now looks like this:</p>
+
+<ul>
+<li>Write feature</li>
+<li>Write tests</li>
+<li>Push features to production</li>
+</ul>
+
+<h2>The many benefits of a great documentation</h2>
+
+<p>Documentation is hard to write and hard to maintain. Even more at the end of the feature cycle, when you’ve forgotten all the edge cases you wrote.</p>
+
+<p>It’s sad, because there are actually many benefits of having a great documentation, especially with side projects:</p>
+
+<ul>
+<li>It greatly helps the adoption of your project by other developers, as almost no one will work on your tool if you don't provide some kind of documentation.</li>
+<li>It’s free marketing. Documentation contains all the keywords necessary for your SEO, and you won’t have to write those shitty blog posts that most internet gurus tell you to write and no one wants to read.</li>
+<li>It’s really useful for your users, as most of them are not actually you, therefore needing guidance on how to use your tool.</li>
+<li>It reduces the number of customer support tickets you will have to answer to.</li>
+</ul>
+
+<p>A complete, well-written documentation is always the sign of a great product. It’s easily the most powerful tool you have at your disposal if you know nothing about marketing and still want to gain some traction. READMEs are also a very powerful marketing tool that I should write about in the future.</p>
+
+<h2>Change how you write softwares</h2>
+
+<p>I suggest to completely change how you write softwares.</p>
+
+<p>Start with the documentation. That means: do not write a single line of code without having completely documented the feature you are about to write.</p>
+
+<p>Then, write the code that supports this documentation, and write tests that match this code. Or write tests then the code if you are fan of TDD — it doesn’t really matter.</p>
+
+<p>Sometimes, tests will show you that you missed something in your documentation. Update it accordingly.</p>
+
+<p>Then push both the code and the documentation to production.</p>
+
+<p>Later on, if you need to modify the feature, start by updating your documentation. Then update your code. Always start with the documentation.</p>
+
+<p>Ideally, you would have a rule in your CI that prevent you from committing a feature without the associated documentation. I don't know how to do it programmatically, but you can simply have a checklist in your pull request template that lets you achieve this goal.</p>
+
+<h2>Final note</h2>
+
+<p>I don't like methodologies in general. Don’t waste time with TDD, BDD and other methodologies that seem to be designed to slow down side projects.</p>
+
+<p>What’s really important is a software</p>
+
+<ul>
+<li>That works,</li>
+<li>That is really fast,</li>
+<li>That has a great documentation so both developers and users will know how to use it.</li>
+</ul>
+
+<p>Point 1 is covered by having tests. Write tests, always, but not too many.</p>
+
+<p>Point 2 comes with experience. Making a software fast is a result of a lot of decisions and should be one of your priority, but you will only know how to it well after a few years of struggling with bad code.</p>
+
+<p>Point 3 comes by forcing you to write documentation before you do anything.</p>
+
+<p>Nothing else matters, really.</p>
+    ]]></content>
+</entry>
+            <entry>
     <id>https://regisfreyd.com/how-i-work-2020-edition</id>
     <link type="text/html" rel="alternate" href="https://regisfreyd.com/how-i-work-2020-edition" />
     <title>How I work (2020 edition)</title>
@@ -108,9 +203,9 @@ After years of working with Sublime Text and......</summary>
     ]]></content>
 </entry>
             <entry>
-    <id>https://regisfreyd.com/apple-music-is-better</id>
-    <link type="text/html" rel="alternate" href="https://regisfreyd.com/apple-music-is-better" />
-    <title>Apple Music is better</title>
+    <id>https://regisfreyd.com/apple-music-is-better-than-spotify</id>
+    <link type="text/html" rel="alternate" href="https://regisfreyd.com/apple-music-is-better-than-spotify" />
+    <title>Apple Music is better than Spotify</title>
     <published>2020-05-02T00:00:00+00:00</published>
     <updated>2020-05-02T00:00:00+00:00</updated>
     <author>
