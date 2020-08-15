@@ -8,7 +8,7 @@
   <meta name="title" content="Regis Freyd">
   <meta name="description" content="Regis Freyd">
   <meta name="author" content="Regis Freyd">
-  <link rel="canonical" href="https://regisfreyd.com/single-point-of-contact">
+  <link rel="canonical" href="https://regisfreyd.com/laravel-test-job-dispatches-other-jobs">
   <link rel="home" href="https://regisfreyd.com">
   <link href="/blog/feed.atom" type="application/atom+xml" rel="alternate" title="Regis Freyd Atom Feed">
 
@@ -16,20 +16,20 @@
   <link rel="icon" href="/assets/img/favicon-32.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon-32.png">
 
-  <title>Have a single point of contact for your side project | Regis Freyd</title>
+  <title>How to test that a job dispatches another job in Laravel | Regis Freyd</title>
 
-  <meta property="og:title" content="Have a single point of contact for your side project" />
+  <meta property="og:title" content="How to test that a job dispatches another job in Laravel" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://regisfreyd.com/single-point-of-contact" />
-<meta property="og:image" content="https://regisfreyd.com/assets/img/post/single-point-of-contact.png" />
+<meta property="og:url" content="https://regisfreyd.com/laravel-test-job-dispatches-other-jobs" />
+<meta property="og:image" content="https://regisfreyd.com/assets/img/post/laravel-test-job-dispatches-other-jobs.png" />
 <meta property="og:image:height" content="628" />
 <meta property="og:image:width" content="1200" />
-<meta property="og:description" content="When you have a side project, don&#039;t waste your time having too many point of contacts. It drains way too much energy." />
+<meta property="og:description" content="Bypass the Queue::fake to test dispatched jobs from a job." />
 
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:description" content="When you have a side project, don&#039;t waste your time having too many point of contacts. It drains way too much energy." />
-<meta name="twitter:title" content="Have a single point of contact for your side project" />
-<meta name="twitter:image" content="https://regisfreyd.com/assets/img/post/single-point-of-contact.png" />
+<meta name="twitter:description" content="Bypass the Queue::fake to test dispatched jobs from a job." />
+<meta name="twitter:title" content="How to test that a job dispatches another job in Laravel" />
+<meta name="twitter:image" content="https://regisfreyd.com/assets/img/post/laravel-test-job-dispatches-other-jobs.png" />
 
   <link rel="stylesheet" href="/assets/build/css/main.css?id=1bb41a9683a390a617f5">
 
@@ -68,21 +68,23 @@
 
     <div class="blog-post h-entry mb5 bb b--black-20 pb4">
   <div class="mb4">&LeftArrow; <a href="/">Back to homepage</a></div>
-  <h1 class="p-name mb1">Have a single point of contact for your side project</h1>
-  <p class="f6 mb4 mt0 gray">Written by <a href="https://twitter.com/djaiss" class="p-author h-card">Regis Freyd</a> and published on <span class="dt-published" datetime="2020-02-25 12:00:00">February 25, 2020</span></p>
+  <h1 class="p-name mb1">How to test that a job dispatches another job in Laravel</h1>
+  <p class="f6 mb4 mt0 gray">Written by <a href="https://twitter.com/djaiss" class="p-author h-card">Regis Freyd</a> and published on <span class="dt-published" datetime="2020-08-15 12:00:00">August 15, 2020</span></p>
 
   
   
   <div class="f4">
-    <p>When your side project gains traction, alongside with being flooded by feature requests, you will receive requests to open a Slack community, or a forum, or to have a newsletter, or to use GitHub issues, or to have a dedicated Twitter account. You will also be tempted to record every feature request — because, well, it’s tempting.</p>
+    <p>Sometimes, in your Laravel application, you need a job that will dispatch other jobs. For instance, a cron that triggers a job to calculate the activity of all users, and this job triggers a single job for each user.</p>
 
-<p>Don’t.</p>
+<p>The only way to know if the second job gets triggered is to fake the Bus chain, using <code>Queue::fake</code> at the beginning of your tests.</p>
 
-<p>If you work on a side project, you will fight every minute of your life to find the time to work on it. You probably have a full-time job, a spouse and/or kids, friends and life in general. Finding 1 or 2 hours per day to work on your passion is tough, and precious.</p>
+<p>But if you do that, you will only test that the first job get dispatched. It will be dispatched, but not executed - therefore, the secondary jobs won’t be dispatched at all.</p>
 
-<p>Do you really want to spend this time maintaining a lot of channels to talk to your community? Don’t get me wrong: having a community around your project is essential. However, the cost of having too many official channels is enormous and drains a lot of attention and energy — energy that you will not spend on doing what you loved in the first place: working on the core of your side project. The more communication channels you have, the more people will /steal/ your time by flooding you with requests or support questions. And as you are kind, you will try to please them — but this is endless.</p>
+<p>How do you test that all the secondary jobs were effectively dispatched?</p>
 
-<p>For your side project, keep one official channel of communication. It could be the GitHub issues of your project or your own Twitter account. That’s it. Communicate with your community through that channel. And focus on your product. When you will find more time to dedicate to it (because the project generates revenues for instance), you will be able to offer other forms of communication. This time will come. But for now, stay sane.</p>
+<script src="https://gist.github.com/djaiss/b59b872832be5027cc9dfca6a776a469.js"></script>
+
+<p>Instead of calling the first job in a more traditional way, like <code>FirstJob()::dispatch()</code>, we need to instantiate it and call both the dispatch() and handle() methods to actually bypass the fact that the first job isn't really dispatched thanks to the calling the Queue::fake() method.</p>
   </div>
 
   <div class="tc mt6 bb b--black-20 pb4 mb4">
@@ -94,12 +96,12 @@
 
   <nav class="flex justify-between">
     <div>
+            <a href="https://regisfreyd.com/email-is-not-broken" title="Older Post: Email is not broken">
+        &LeftArrow; Email is not broken
+      </a>
           </div>
 
     <div>
-            <a href="https://regisfreyd.com/apple-music-is-better-than-spotify" title="Newer Post: Apple Music is better than Spotify">
-        Apple Music is better than Spotify &RightArrow;
-      </a>
           </div>
   </nav>
 </div>

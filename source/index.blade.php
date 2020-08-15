@@ -13,7 +13,7 @@
 @section('body')
 
 <p>Hi 👋</p>
-<p class="lh-copy mb5">I’m Regis Freyd, full-stack developer and product manager based in Montréal, and quite active in <a href="https://github.com/djaiss">the open source community</a>. The most successful project I've created and still maintain is <a href="https://monicahq.com">Monica</a>, an open source personal CRM. You can read more about me on the <a href="/about">About page</a>.</p>
+<p class="lh-copy mb5">I’m Regis Freyd, an <a href="https://www.indiehackers.com/start">indie-hacker</a> based in Montréal, and quite active in <a href="https://github.com/djaiss">the open source community</a>. The most successful project I've created and still maintain is <a href="https://monicahq.com">Monica</a>, an open source personal CRM. You can read more about me on the <a href="/about">About page</a>.</p>
 
 <h2 class="fw4 f4">Latest posts</h2>
 
