@@ -11,7 +11,7 @@
 
 <h2 class="fw4 f4">About me</h2>
 
-<p class="lh-copy mb5">I'm a {{ $page->age() }} years old full-stack developer working mainly on Monica in my spare time. I’m currently working on the second major version of Monica, and also on a tool that will help teams work better.</p>
+<p class="lh-copy mb5">I'm a {{ $page->age() }} years old <a href="https://www.indiehackers.com/start">indie hacker</a> working mainly on Monica in my spare time. I’m currently working on the second major version of Monica, and also on a tool that will help teams work better.</p>
 
 <h2 class="fw4 f4">My most popular repositories</h2>
 
