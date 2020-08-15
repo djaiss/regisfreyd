@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="title" content="Regis Freyd">
+  <meta name="description" content="Regis Freyd">
+  <meta name="author" content="Regis Freyd">
+  <link rel="canonical" href="https://regisfreyd.com/laravel-test-job-dispatches-other-jobs">
+  <link rel="home" href="https://regisfreyd.com">
+  <link href="/blog/feed.atom" type="application/atom+xml" rel="alternate" title="Regis Freyd Atom Feed">
+
+  <!-- favicon -->
+  <link rel="icon" href="/assets/img/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon-32.png">
+
+  <title>How to test that a job dispatches another job in Laravel | Regis Freyd</title>
+
+  <meta property="og:title" content="How to test that a job dispatches another job in Laravel" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://regisfreyd.com/laravel-test-job-dispatches-other-jobs" />
+<meta property="og:image" content="https://regisfreyd.com/assets/img/post/laravel-test-job-dispatches-other-jobs.png" />
+<meta property="og:image:height" content="628" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:description" content="Bypass the Queue::fake to test dispatched jobs from a job." />
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:description" content="Bypass the Queue::fake to test dispatched jobs from a job." />
+<meta name="twitter:title" content="How to test that a job dispatches another job in Laravel" />
+<meta name="twitter:image" content="https://regisfreyd.com/assets/img/post/laravel-test-job-dispatches-other-jobs.png" />
+
+  <link rel="stylesheet" href="/assets/build/css/main.css?id=d6a28d22999d95e37a07">
+
+  <script language="JavaScript">
+    function unScramble(eMail1, eMail2, linkText, subjectText, statusText) {
+      var a, b, c, d, e;
+      a = eMail1;
+      c = linkText;
+      b = eMail2.substring(0, eMail2.length - 5);
+      if (subjectText != "") {
+        d = "?subject=" + escape(subjectText);
+      } else {
+        d = "";
+      }
+      if (statusText != "") {
+        e = " onMouseOver=\"top.status=\'" + statusText +
+          "\'\;return true\;\" onMouseOut=\"top.status=\'\'\;return true\;\"";
+      } else {
+        e = "";
+      }
+      document.write("<A HREF=\"mai" + "lto:" + a + "@" + b + d + "\"" + e + ">" + c + "</A>");
+    }
+  </script>
+</head>
+
+<body>
+  <main role="main" class="mw7 center mt5 ph3 ph0-ns">
+    <ul class="mb5 list pa0">
+      <li class="di">
+        <a href="/" class="mr2">Home</a>
+        <a href="/about" class="mr2">About</a>
+        <a href="/blog/feed.atom" class="mr2">RSS feed</a>
+        <a href="https://twitter.com/djaiss">Twitter</a>
+      </li>
+    </ul>
+
+    <div class="blog-post h-entry mb5 bb b--black-20 pb4">
+  <div class="mb4">&LeftArrow; <a href="/">Back to homepage</a></div>
+  <h1 class="p-name mb1">How to test that a job dispatches another job in Laravel</h1>
+  <p class="f6 mb4 mt0 gray">Written by <a href="https://twitter.com/djaiss" class="p-author h-card">Regis Freyd</a> and published on <span class="dt-published" datetime="2020-08-15 12:00:00">August 15, 2020</span></p>
+
+  
+  
+  <div class="f4">
+    <p>Sometimes, in your Laravel application, you need a job that will dispatch other jobs. For instance, a cron that triggers a job to calculate the activity of all users, and this job triggers a single job for each user.</p>
+
+<p>The only way to know if the second job gets triggered is to fake the Bus chain, using <code>Queue::fake</code> at the beginning of your tests.</p>
+
+<p>But if you do that, you will only test that the first job get dispatched. It will be dispatched, but not executed - therefore, the secondary jobs won’t be dispatched at all.</p>
+
+<p>How do you test that all the secondary jobs were effectively dispatched?</p>
+
+<script src="https://gist.github.com/djaiss/b59b872832be5027cc9dfca6a776a469.js"></script>
+
+<p>Instead of calling the first job in a more traditional way, like <code>FirstJob()::dispatch()</code>, we need to instantiate it and call both the dispatch() and handle() methods to actually bypass the fact that the first job isn't really dispatched thanks to the calling the Queue::fake() method.</p>
+  </div>
+
+  <div class="tc mt6 bb b--black-20 pb4 mb4">
+    <div class="">
+      <img src="/assets/img/avatar.png" alt="avatar regis freyd">
+    </div>
+    <p>Regis Freyd is a full-stack developer and product manager living in Montreal. He’s the author of the popular open source personal CRM <a href="https://github.com/monicahq/monica">Monica</a>. You should <a href="https://twitter.com/djaiss">follow him on Twitter</a>.</p>
+  </div>
+
+  <nav class="flex justify-between">
+    <div>
+            <a href="https://regisfreyd.com/email-is-not-broken" title="Older Post: Email is not broken">
+        &LeftArrow; Email is not broken
+      </a>
+          </div>
+
+    <div>
+          </div>
+  </nav>
+</div>
+
+<p class="tc mb2">Hi from Canada 🇨🇦</p>
+<p class="f6 lh-copy">You are not being tracked. Analytics of this site are provided by <a href="https://usefathom.com/ref/APPNBJ">Fathom</a>, a privacy-friendly analytics tool.</p>
+
+  </main>
+
+    <!-- Fathom - simple website analytics - https://usefathom.com -->
+  <script>
+    (function(f, a, t, h, o, m) {
+      a[h] = a[h] || function() {
+        (a[h].q = a[h].q || []).push(arguments)
+      };
+      o = f.createElement('script'),
+        m = f.getElementsByTagName('script')[0];
+      o.async = 1;
+      o.src = t;
+      o.id = 'fathom-script';
+      m.parentNode.insertBefore(o, m)
+    })(document, window, 'https://cdn.usefathom.com/tracker.js', 'fathom');
+    fathom('set', 'siteId', 'HHOPDHUN');
+    fathom('trackPageview');
+  </script>
+  <!-- / Fathom -->
+  </body>
+
+</html>
