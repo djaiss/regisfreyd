@@ -2,87 +2,92 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
  <url>
   <loc>https://regisfreyd.com/single-point-of-contact</loc>
-  <lastmod>2020-08-18T01:56:20+00:00</lastmod>
+  <lastmod>2020-08-21T12:24:57+00:00</lastmod>
   <changefreq>daily</changefreq>
  </url>
  <url>
   <loc>https://regisfreyd.com/a-developers-guide-to-create-a-blog</loc>
-  <lastmod>2020-08-18T01:56:20+00:00</lastmod>
+  <lastmod>2020-08-21T12:24:57+00:00</lastmod>
+  <changefreq>daily</changefreq>
+ </url>
+ <url>
+  <loc>https://regisfreyd.com/a_lazy_approach_to_demonstrate_what_your_product_can_do_for_your_users_the_Laravel_way</loc>
+  <lastmod>2020-08-21T12:24:57+00:00</lastmod>
   <changefreq>daily</changefreq>
  </url>
  <url>
   <loc>https://regisfreyd.com/understanding-software-licences</loc>
-  <lastmod>2020-08-18T01:56:20+00:00</lastmod>
+  <lastmod>2020-08-21T12:24:57+00:00</lastmod>
   <changefreq>daily</changefreq>
  </url>
  <url>
   <loc>https://regisfreyd.com/apple-music-is-better-than-spotify</loc>
-  <lastmod>2020-08-18T01:56:20+00:00</lastmod>
+  <lastmod>2020-08-21T12:24:57+00:00</lastmod>
   <changefreq>daily</changefreq>
  </url>
  <url>
   <loc>https://regisfreyd.com/email-is-not-broken</loc>
-  <lastmod>2020-08-18T01:56:20+00:00</lastmod>
+  <lastmod>2020-08-21T12:24:57+00:00</lastmod>
   <changefreq>daily</changefreq>
  </url>
  <url>
   <loc>https://regisfreyd.com/how-i-work-2020-edition</loc>
-  <lastmod>2020-08-18T01:56:20+00:00</lastmod>
+  <lastmod>2020-08-21T12:24:57+00:00</lastmod>
   <changefreq>daily</changefreq>
  </url>
  <url>
   <loc>https://regisfreyd.com/laravel-test-job-dispatches-other-jobs</loc>
-  <lastmod>2020-08-18T01:56:20+00:00</lastmod>
+  <lastmod>2020-08-21T12:24:57+00:00</lastmod>
   <changefreq>daily</changefreq>
  </url>
  <url>
   <loc>https://regisfreyd.com/documentation-driven-development</loc>
-  <lastmod>2020-08-18T01:56:20+00:00</lastmod>
+  <lastmod>2020-08-21T12:24:57+00:00</lastmod>
   <changefreq>daily</changefreq>
  </url>
  <url>
   <loc>https://regisfreyd.com/blog</loc>
-  <lastmod>2020-08-18T01:56:20+00:00</lastmod>
+  <lastmod>2020-08-21T12:24:57+00:00</lastmod>
   <changefreq>daily</changefreq>
  </url>
  <url>
   <loc>https://regisfreyd.com/blog/2</loc>
-  <lastmod>2020-08-18T01:56:20+00:00</lastmod>
+  <lastmod>2020-08-21T12:24:57+00:00</lastmod>
   <changefreq>daily</changefreq>
  </url>
  <url>
   <loc>https://regisfreyd.com/blog/3</loc>
-  <lastmod>2020-08-18T01:56:20+00:00</lastmod>
+  <lastmod>2020-08-21T12:24:57+00:00</lastmod>
   <changefreq>daily</changefreq>
  </url>
  <url>
   <loc>https://regisfreyd.com/about</loc>
-  <lastmod>2020-08-18T01:56:20+00:00</lastmod>
+  <lastmod>2020-08-21T12:24:57+00:00</lastmod>
   <changefreq>daily</changefreq>
  </url>
  <url>
   <loc>https://regisfreyd.com/contact</loc>
-  <lastmod>2020-08-18T01:56:20+00:00</lastmod>
+  <lastmod>2020-08-21T12:24:57+00:00</lastmod>
   <changefreq>daily</changefreq>
  </url>
  <url>
   <loc>https://regisfreyd.com/blog/categories/feature</loc>
-  <lastmod>2020-08-18T01:56:20+00:00</lastmod>
+  <lastmod>2020-08-21T12:24:57+00:00</lastmod>
   <changefreq>daily</changefreq>
  </url>
  <url>
   <loc>https://regisfreyd.com/blog/categories/configuration</loc>
-  <lastmod>2020-08-18T01:56:20+00:00</lastmod>
+  <lastmod>2020-08-21T12:24:57+00:00</lastmod>
   <changefreq>daily</changefreq>
  </url>
  <url>
   <loc>https://regisfreyd.com/blog/feed.atom</loc>
-  <lastmod>2020-08-18T01:56:20+00:00</lastmod>
+  <lastmod>2020-08-21T12:24:57+00:00</lastmod>
   <changefreq>daily</changefreq>
  </url>
  <url>
   <loc>https://regisfreyd.com</loc>
-  <lastmod>2020-08-18T01:56:20+00:00</lastmod>
+  <lastmod>2020-08-21T12:24:57+00:00</lastmod>
   <changefreq>daily</changefreq>
  </url>
 </urlset>

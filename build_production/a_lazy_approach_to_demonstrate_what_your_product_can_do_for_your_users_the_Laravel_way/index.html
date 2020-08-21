@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="title" content="Regis Freyd">
+  <meta name="description" content="Regis Freyd">
+  <meta name="author" content="Regis Freyd">
+  <link rel="canonical" href="https://regisfreyd.com/a_lazy_approach_to_demonstrate_what_your_product_can_do_for_your_users_the_Laravel_way">
+  <link rel="home" href="https://regisfreyd.com">
+  <link href="/blog/feed.atom" type="application/atom+xml" rel="alternate" title="Regis Freyd Atom Feed">
+
+  <!-- favicon -->
+  <link rel="icon" href="/assets/img/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon-32.png">
+
+  <title>A lazy approach to demonstrate what your product can do for your users, the Laravel way | Regis Freyd</title>
+
+  <meta property="og:title" content="A lazy approach to demonstrate what your product can do for your users, the Laravel way" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://regisfreyd.com/a_lazy_approach_to_demonstrate_what_your_product_can_do_for_your_users_the_Laravel_way" />
+<meta property="og:image" content="https://regisfreyd.com/assets/img/post/a_lazy_approach_to_demonstrate_what_your_product_can_do_for_your_users_the_Laravel_way.png" />
+<meta property="og:image:height" content="628" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:description" content="A quick overview of all the available licences for your software." />
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:description" content="A quick overview of all the available licences for your software." />
+<meta name="twitter:title" content="A lazy approach to demonstrate what your product can do for your users, the Laravel way" />
+<meta name="twitter:image" content="https://regisfreyd.com/assets/img/post/a_lazy_approach_to_demonstrate_what_your_product_can_do_for_your_users_the_Laravel_way.png" />
+
+  <link rel="stylesheet" href="/assets/build/css/main.css?id=27bb591488a1a33d668b">
+
+  <script language="JavaScript">
+    function unScramble(eMail1, eMail2, linkText, subjectText, statusText) {
+      var a, b, c, d, e;
+      a = eMail1;
+      c = linkText;
+      b = eMail2.substring(0, eMail2.length - 5);
+      if (subjectText != "") {
+        d = "?subject=" + escape(subjectText);
+      } else {
+        d = "";
+      }
+      if (statusText != "") {
+        e = " onMouseOver=\"top.status=\'" + statusText +
+          "\'\;return true\;\" onMouseOut=\"top.status=\'\'\;return true\;\"";
+      } else {
+        e = "";
+      }
+      document.write("<A HREF=\"mai" + "lto:" + a + "@" + b + d + "\"" + e + ">" + c + "</A>");
+    }
+  </script>
+</head>
+
+<body>
+  <main role="main" class="mw7 center mt5 ph3 ph0-ns">
+    <ul class="mb5 list pa0">
+      <li class="di">
+        <a href="/" class="mr2">Home</a>
+        <a href="/about" class="mr2">About</a>
+        <a href="/blog/feed.atom" class="mr2">RSS feed</a>
+        <a href="https://twitter.com/djaiss">Twitter</a>
+      </li>
+    </ul>
+
+    <div class="blog-post h-entry mb5 bb b--black-20 pb4">
+  <div class="mb4">&LeftArrow; <a href="/">Back to homepage</a></div>
+  <h1 class="p-name mb2 lh-copy fw5 f3">A lazy approach to demonstrate what your product can do for your users, the Laravel way</h1>
+  <p class="f6 mb4 mt0 gray">Written by <a href="https://twitter.com/djaiss" class="p-author h-card">Regis Freyd</a> and published on <span class="dt-published" datetime="2020-08-21 12:00:00">August 21, 2020</span></p>
+
+  
+  
+  <div class="f4">
+    <p>When users end up on your SAAS marketing site, they want to see as quickly as possible what this product can do for them and how it will help. They want to see what the product can do <strong>for real</strong>. Screenshots are not enough. Videos are slightly better. Asking users to set up their accounts to see what it will look like is a no go, and the worst idea of all is to set up a button requesting a demo from a salesman.</p>
+
+<p>The best way to demonstrate the capabilities and features of your product is to fill an account with a set of fake data, ideally without any lorem ipsum but actual words. How would you do that?</p>
+
+<p>Several strategies let us achieve exactly that. We’ll discuss the pros and cons of each, from a marketing perspective and more importantly from a developer perspective.</p>
+
+<ul>
+<li>Upon account creation, fill the account with fake data for the user. This is what I call <strong>the Basecamp way</strong>.</li>
+<li>Ask the user to use a button to populate the account with fake data.</li>
+<li>Seed the database at the console level.</li>
+</ul>
+
+<h2>First option: the Basecamp way</h2>
+
+<p>When you create an account in <a href="https://basecamp.com">Basecamp</a>, they automatically populate your account with 3 sample projects. Each one of them contains data that seem extremely real, alongside real photos and real comments and interactions. It’s a smart idea as the user can immediately jump in and see, for real, what the product does. However, users will have to find a way to dismiss this information and bring their account back to the original state. Granted, it’s not hard to find in Basecamp, but still.</p>
+
+<p>From a Laravel developer perspective, here is what this approach means:</p>
+
+<ul>
+<li>Every time an account is created, you have to run a job (or a command that triggers a bunch of jobs) to fill the account with fake data. I suggest that you use queues for that, which Laravel makes it super easy to use.</li>
+<li>This job will actually block the account creation process, as you will need to make sure the job is done before displaying the welcome state to your users.</li>
+<li>That means having a mechanism in your views that will wait for the process to end. You can use several techniques for that, the best way being WebSockets with something like <a href="https://pusher.com">Pusher</a> or your own Redis.</li>
+<li>If your site gains traction and you suddenly attract lots of visitors, the number of jobs will accumulate, the queue will get bigger and the signup process will take significantly more time.</li>
+<li>To prevent this, you can use more workers to work on the queue jobs, but it’s very likely that you still have only one master database so it won’t be much faster even if you add more workers.</li>
+<li>Another drawback, which is kind of inevitable, is the increase of the database’s size as every new user will have his account filled with fake data. Depending on the project’s size, this can accumulate quickly. Unless you provide a mechanism to remove this data, which is an entirely new feature in itself (more on that later).</li>
+</ul>
+
+<p>This approach is a lot of work. It’s also a solution that we can throw money at, even though that’s a solution that most indie hackers don’t like: if you want to reduce the time jobs spend in the queues, you simply need a more powerful database server and your data will be processed faster.</p>
+
+<h2>Second option: populate the account on demand</h2>
+
+<p>The second option is a bit simpler, but not that much. After having created the account, the user sees a message asking him if he wants to populate the account with a set of data so he can see what the product will look like.</p>
+
+<p>What I like with this approach is the fact that the user will be in control. He will either choose to browse the product with all the possible blank states in the app, or browse it with a lot of fake data. However, it comes with the drawback of having one hard choice to make when you first land on the page: should you fill the account with all these data?</p>
+
+<p>Technically, this option is slightly less complex than the first option. You won’t need to block the UI upon account creation - but you will still need some kind of mechanisms to show the user that the account is currently being populated.</p>
+
+<h2>Third option: seed the account at the console level</h2>
+
+<p>This is the solution I’ve chosen for my upcoming application, OfficeLife.</p>
+
+<p>OfficeLife will be available in several flavors: as a SAAS on officelife.io, and as a self-hosted option, available for free on GitHub, DockerHub, etc…
+ When you provide an open-source version of your software, you need to be very careful with all the options you provide to you and your future users. Every decision you make will affect everyone.</p>
+
+<p>I’ve decided to provide a way to populate a dummy account, but only when the administrator of the instance will choose to. The solution is to provide a <a href="https://laravel.com/docs/7.x/artisan">custom Laravel command</a> that will populate the account. You need to connect to a terminal and run the command. This will wipe the database, run all the migrations, create an account, and populate all the data.</p>
+
+<p>The command is <code>php artisan setup:dummyaccount</code>. And the script is as follow (it has been greatly, greatly shortened as the original file is gigantic):</p>
+
+<script src="https://gist.github.com/djaiss/a2f1702a100da3febe60434b25e73df4.js"></script>
+
+<p>The advantages compared to previous solutions:</p>
+
+<ul>
+<li>The administrator is in complete control of when this process occurs.</li>
+<li>You won’t block any signup process as it’ll be executed behind the scenes before any user gets on the platform.</li>
+<li>Technically, it’s not complex per se.</li>
+</ul>
+
+<p>However, with this solution, how would your users test your SAAS? It’s simple: create a separate instance from your main one, something like <code>demo.officelife.io</code>. This link would be available from your marketing site, probably on the header, and would be separate from the page where your users would signup for real.</p>
+
+<p>This instance would have a cron that would run every 5 minutes, which would trigger the <code>setup:dummyaccount</code> command. On the login page, simply indicate the login and password that the users need to enter to be logged, and here we go - users have a complete account to play with, with no drawbacks.</p>
+
+<p>Why would the script run every 5 minutes?</p>
+
+<ul>
+<li>To prevent users from entering too much garbage. If you don’t reset the database at a regular interval, users would create too much fake data and the quality of the data, that all test users would see,  would drastically be degraded.</li>
+</ul>
+
+<p>The technical complexity of this solution is limited. The command is pretty simple to write. There are two things to set up in your app:</p>
+
+<ul>
+<li>Setup the cron that triggers the command every 5 minutes. Laravel makes it dead easy and has a <a href="https://laravel.com/docs/7.x/scheduling#scheduling-artisan-commands">good documentation for this</a>.</li>
+<li>Put in place a message in the header of your app, that will warn users the app is reset every 5 minutes.</li>
+</ul>
+
+<h3>Removing fake data from the database</h3>
+
+<p>Removing fake data means having the ability to know which data is fake. What does it mean?</p>
+
+<p>In my apps, I mainly use services to do anything that talks to the database. I call them services, but it’s also called <a href="https://freek.dev/1371-refactoring-to-actions">action classes</a>, commands, or a few other terms. The name doesn’t matter.</p>
+
+<p>In every service of my app, one of the parameters needed by the service is a boolean that indicates whether the data is dummy data or not. Take a look at how it’s being used in the snippet below (not working code):</p>
+
+<script src="https://gist.github.com/djaiss/8b0420330e378994bbe7508a368b66e1.js"></script>
+
+<p>In every table of the</p>
+  </div>
+
+  <div class="tc mt6 bb b--black-20 pb4 mb4">
+    <div class="">
+      <img src="/assets/img/avatar.png" alt="avatar regis freyd">
+    </div>
+    <p>Regis Freyd is a full-stack developer and product manager living in Montreal. He’s the author of the popular open source personal CRM <a href="https://github.com/monicahq/monica">Monica</a>. You should <a href="https://twitter.com/djaiss">follow him on Twitter</a>.</p>
+  </div>
+
+  <nav class="flex justify-between">
+    <div>
+            <a href="https://regisfreyd.com/laravel-test-job-dispatches-other-jobs" title="Older Post: How to test that a job dispatches another job in Laravel">
+        &LeftArrow; How to test that a job dispatches another job in Laravel
+      </a>
+          </div>
+
+    <div>
+          </div>
+  </nav>
+</div>
+
+<p class="tc mb2">Hi from Canada 🇨🇦</p>
+<p class="f6 lh-copy">You are not being tracked. Analytics of this site are provided by <a href="https://usefathom.com/ref/APPNBJ">Fathom</a>, a privacy-friendly analytics tool.</p>
+
+  </main>
+
+    <!-- Fathom - simple website analytics - https://usefathom.com -->
+  <script>
+    (function(f, a, t, h, o, m) {
+      a[h] = a[h] || function() {
+        (a[h].q = a[h].q || []).push(arguments)
+      };
+      o = f.createElement('script'),
+        m = f.getElementsByTagName('script')[0];
+      o.async = 1;
+      o.src = t;
+      o.id = 'fathom-script';
+      m.parentNode.insertBefore(o, m)
+    })(document, window, 'https://cdn.usefathom.com/tracker.js', 'fathom');
+    fathom('set', 'siteId', 'HHOPDHUN');
+    fathom('trackPageview');
+  </script>
+  <!-- / Fathom -->
+  </body>
+
+</html>
