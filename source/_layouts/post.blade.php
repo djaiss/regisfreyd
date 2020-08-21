@@ -18,7 +18,7 @@
 @section('body')
 <div class="blog-post h-entry mb5 bb b--black-20 pb4">
   <div class="mb4">&LeftArrow; <a href="/">Back to homepage</a></div>
-  <h1 class="p-name mb1">{{ $page->title }}</h1>
+  <h1 class="p-name mb2 lh-copy fw5 f3">{{ $page->title }}</h1>
   <p class="f6 mb4 mt0 gray">Written by <a href="{{ $page->twitter_author }}" class="p-author h-card">{{ $page->author }}</a> and published on <span class="dt-published" datetime="{{ date('Y-m-d 12:00:00', $page->date) }}">{{ date('F j, Y', $page->date) }}</span></p>
 
   @if ($page->cover_image)
