@@ -3,7 +3,7 @@
     <title>Regis Freyd</title>
     <link href="https://regisfreyd.com" />
     <link type="application/atom+xml" rel="self" href="https://regisfreyd.com/blog/feed.atom" />
-    <updated>2020-08-21T12:24:57+00:00</updated>
+    <updated>2021-01-31T15:52:53+00:00</updated>
     <id>https://regisfreyd.com/blog/feed.atom</id>
     <author>
         <name>Regis Freyd</name>
@@ -61,7 +61,7 @@
 <p>This is the solution I’ve chosen for my upcoming application, OfficeLife.</p>
 
 <p>OfficeLife will be available in several flavors: as a SAAS on officelife.io, and as a self-hosted option, available for free on GitHub, DockerHub, etc…
- When you provide an open-source version of your software, you need to be very careful with all the options you provide to you and your future users. Every decision you make will affect everyone.</p>
+When you provide an open-source version of your software, you need to be very careful with all the options you provide to you and your future users. Every decision you make will affect everyone.</p>
 
 <p>I’ve decided to provide a way to populate a dummy account, but only when the administrator of the instance will choose to. The solution is to provide a <a href="https://laravel.com/docs/7.x/artisan">custom Laravel command</a> that will populate the account. You need to connect to a terminal and run the command. This will wipe the database, run all the migrations, create an account, and populate all the data.</p>
 
@@ -103,8 +103,6 @@
 <p>In every service of my app, one of the parameters needed by the service is a boolean that indicates whether the data is dummy data or not. Take a look at how it’s being used in the snippet below (not working code):</p>
 
 <script src="https://gist.github.com/djaiss/8b0420330e378994bbe7508a368b66e1.js"></script>
-
-<p>In every table of the</p>
     ]]></content>
 </entry>
             <entry>

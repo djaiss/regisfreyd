@@ -39,7 +39,7 @@
     <div class="">
       <img src="/assets/img/avatar.png" alt="avatar regis freyd">
     </div>
-    <p>Regis Freyd is a full-stack developer and product manager living in Montreal. He’s the author of the popular open source personal CRM <a href="https://github.com/monicahq/monica">Monica</a>. You should <a href="https://twitter.com/djaiss">follow him on Twitter</a>.</p>
+    <p>Regis Freyd is a full stack product maker living in Montreal. He’s the author of the popular open source personal CRM <a href="https://github.com/monicahq/monica">Monica</a>. You should <a href="https://twitter.com/djaiss">follow him on Twitter</a>.</p>
   </div>
 
   <nav class="flex justify-between">
