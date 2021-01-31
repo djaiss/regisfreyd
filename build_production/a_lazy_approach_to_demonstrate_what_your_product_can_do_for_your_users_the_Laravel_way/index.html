@@ -31,7 +31,7 @@
 <meta name="twitter:title" content="A lazy approach to demonstrate what your product can do for your users, the Laravel way" />
 <meta name="twitter:image" content="https://regisfreyd.com/assets/img/post/a_lazy_approach_to_demonstrate_what_your_product_can_do_for_your_users_the_Laravel_way.png" />
 
-  <link rel="stylesheet" href="/assets/build/css/main.css?id=27bb591488a1a33d668b">
+  <link rel="stylesheet" href="/assets/build/css/main.css?id=a3150a83cfbd0204518e">
 
   <script language="JavaScript">
     function unScramble(eMail1, eMail2, linkText, subjectText, statusText) {
@@ -57,14 +57,24 @@
 
 <body>
   <main role="main" class="mw7 center mt5 ph3 ph0-ns">
-    <ul class="mb5 list pa0">
-      <li class="di">
-        <a href="/" class="mr2">Home</a>
-        <a href="/about" class="mr2">About</a>
-        <a href="/blog/feed.atom" class="mr2">RSS feed</a>
-        <a href="https://twitter.com/djaiss">Twitter</a>
-      </li>
-    </ul>
+    <div class="mb5 flex justify-between">
+      <ul class="list pa0">
+        <li class="di">
+          <a href="/" class="mr2">Home</a>
+        </li>
+        <li class="di">
+          <a href="/about" class="mr2">About</a>
+        </li>
+      </ul>
+      <ul class="list pa0">
+        <li class="di">
+          <a href="/blog/feed.atom" class="mr2">RSS feed</a>
+        </li>
+        <li class="di">
+          <a href="https://twitter.com/djaiss">Twitter</a>
+        </li>
+      </ul>
+    </div>
 
     <div class="blog-post h-entry mb5 bb b--black-20 pb4">
   <div class="mb4">&LeftArrow; <a href="/">Back to homepage</a></div>
@@ -116,7 +126,7 @@
 <p>This is the solution I’ve chosen for my upcoming application, OfficeLife.</p>
 
 <p>OfficeLife will be available in several flavors: as a SAAS on officelife.io, and as a self-hosted option, available for free on GitHub, DockerHub, etc…
- When you provide an open-source version of your software, you need to be very careful with all the options you provide to you and your future users. Every decision you make will affect everyone.</p>
+When you provide an open-source version of your software, you need to be very careful with all the options you provide to you and your future users. Every decision you make will affect everyone.</p>
 
 <p>I’ve decided to provide a way to populate a dummy account, but only when the administrator of the instance will choose to. The solution is to provide a <a href="https://laravel.com/docs/7.x/artisan">custom Laravel command</a> that will populate the account. You need to connect to a terminal and run the command. This will wipe the database, run all the migrations, create an account, and populate all the data.</p>
 
@@ -158,15 +168,13 @@
 <p>In every service of my app, one of the parameters needed by the service is a boolean that indicates whether the data is dummy data or not. Take a look at how it’s being used in the snippet below (not working code):</p>
 
 <script src="https://gist.github.com/djaiss/8b0420330e378994bbe7508a368b66e1.js"></script>
-
-<p>In every table of the</p>
   </div>
 
   <div class="tc mt6 bb b--black-20 pb4 mb4">
     <div class="">
       <img src="/assets/img/avatar.png" alt="avatar regis freyd">
     </div>
-    <p>Regis Freyd is a full-stack developer and product manager living in Montreal. He’s the author of the popular open source personal CRM <a href="https://github.com/monicahq/monica">Monica</a>. You should <a href="https://twitter.com/djaiss">follow him on Twitter</a>.</p>
+    <p>Regis Freyd is a full stack product maker living in Montreal. He’s the author of the popular open source personal CRM <a href="https://github.com/monicahq/monica">Monica</a>. You should <a href="https://twitter.com/djaiss">follow him on Twitter</a>.</p>
   </div>
 
   <nav class="flex justify-between">

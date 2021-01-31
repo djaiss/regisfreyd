@@ -46,7 +46,7 @@ Technically, this option is slightly less complex than the first option. You won
 This is the solution I’ve chosen for my upcoming application, OfficeLife.
 
 OfficeLife will be available in several flavors: as a SAAS on officelife.io, and as a self-hosted option, available for free on GitHub, DockerHub, etc…
- When you provide an open-source version of your software, you need to be very careful with all the options you provide to you and your future users. Every decision you make will affect everyone.
+When you provide an open-source version of your software, you need to be very careful with all the options you provide to you and your future users. Every decision you make will affect everyone.
 
 I’ve decided to provide a way to populate a dummy account, but only when the administrator of the instance will choose to. The solution is to provide a [custom Laravel command](https://laravel.com/docs/7.x/artisan) that will populate the account. You need to connect to a terminal and run the command. This will wipe the database, run all the migrations, create an account, and populate all the data.
 
@@ -82,5 +82,3 @@ In my apps, I mainly use services to do anything that talks to the database. I c
 In every service of my app, one of the parameters needed by the service is a boolean that indicates whether the data is dummy data or not. Take a look at how it’s being used in the snippet below (not working code):
 
 <script src="https://gist.github.com/djaiss/8b0420330e378994bbe7508a368b66e1.js"></script>
-
-In every table of the

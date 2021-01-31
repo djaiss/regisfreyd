@@ -6,16 +6,16 @@ As Jigsaw generates static sites, we need to compile before being able to use it
 ./vendor/bin/jigsaw build
 ```
 
-We also need to compile the assets if you’ve changed them.
+You don’t need to, but we can compile the assets if you’ve changed them.
 
 ```bash
 npm run dev
 ```
 
-To serve the site locally, you have to run
+Globally, to serve the site locally, you have to run and that's it.
 
 ```bash
-./vendor/bin/jigsaw serve
+npm run watch
 ```
 
 ## Deployment
@@ -25,3 +25,5 @@ Before deploying the site to production, we need to compile the assets in a cert
 ```bash
 npm run production
 ```
+
+The site is hosted on Netlify. It’s awesome.

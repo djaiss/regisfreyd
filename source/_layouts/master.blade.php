@@ -46,14 +46,24 @@
 
 <body>
   <main role="main" class="mw7 center mt5 ph3 ph0-ns">
-    <ul class="mb5 list pa0">
-      <li class="di">
-        <a href="/" class="mr2">Home</a>
-        <a href="/about" class="mr2">About</a>
-        <a href="/blog/feed.atom" class="mr2">RSS feed</a>
-        <a href="https://twitter.com/djaiss">Twitter</a>
-      </li>
-    </ul>
+    <div class="mb5 flex justify-between">
+      <ul class="list pa0">
+        <li class="di">
+          <a href="/" class="mr2">Home</a>
+        </li>
+        <li class="di">
+          <a href="/about" class="mr2">About</a>
+        </li>
+      </ul>
+      <ul class="list pa0">
+        <li class="di">
+          <a href="/blog/feed.atom" class="mr2">RSS feed</a>
+        </li>
+        <li class="di">
+          <a href="https://twitter.com/djaiss">Twitter</a>
+        </li>
+      </ul>
+    </div>
 
     @yield('body')
   </main>
