@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="title" content="Regis Freyd">
+  <meta name="description" content="Regis Freyd">
+  <meta name="author" content="Regis Freyd">
+  <link rel="canonical" href="https://regisfreyd.com/importing-employees">
+  <link rel="home" href="https://regisfreyd.com">
+  <link href="/blog/feed.atom" type="application/atom+xml" rel="alternate" title="Regis Freyd Atom Feed">
+
+  <!-- favicon -->
+  <link rel="icon" href="/assets/img/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon-32.png">
+
+  <title>Importing employees | Regis Freyd</title>
+
+  <meta property="og:title" content="Importing employees" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://regisfreyd.com/importing-employees" />
+<meta property="og:image" content="https://regisfreyd.com/assets/img/post/importing-employees.png" />
+<meta property="og:image:height" content="628" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:description" content="One of the most important aspect of any software." />
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:description" content="One of the most important aspect of any software." />
+<meta name="twitter:title" content="Importing employees" />
+<meta name="twitter:image" content="https://regisfreyd.com/assets/img/post/importing-employees.png" />
+
+  <link rel="stylesheet" href="/assets/build/css/main.css?id=eb057dea6c81195fa5a9">
+
+  <script language="JavaScript">
+    function unScramble(eMail1, eMail2, linkText, subjectText, statusText) {
+      var a, b, c, d, e;
+      a = eMail1;
+      c = linkText;
+      b = eMail2.substring(0, eMail2.length - 5);
+      if (subjectText != "") {
+        d = "?subject=" + escape(subjectText);
+      } else {
+        d = "";
+      }
+      if (statusText != "") {
+        e = " onMouseOver=\"top.status=\'" + statusText +
+          "\'\;return true\;\" onMouseOut=\"top.status=\'\'\;return true\;\"";
+      } else {
+        e = "";
+      }
+      document.write("<A HREF=\"mai" + "lto:" + a + "@" + b + d + "\"" + e + ">" + c + "</A>");
+    }
+  </script>
+</head>
+
+<body>
+  <main role="main" class="mw7 center mt5 ph3 ph0-ns">
+    <div class="mb5 flex justify-between">
+      <ul class="list pa0">
+        <li class="di">
+          <a href="/" class="mr2">Home</a>
+        </li>
+        <li class="di">
+          <a href="/about" class="mr2">About</a>
+        </li>
+      </ul>
+      <ul class="list pa0">
+        <li class="di">
+          <a href="/blog/feed.atom" class="mr2">RSS feed</a>
+        </li>
+        <li class="di">
+          <a href="https://twitter.com/djaiss">Twitter</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="blog-post h-entry mb5 bb b--black-20 pb4">
+  <div class="mb4">&LeftArrow; <a href="/">Back to homepage</a></div>
+  <h1 class="p-name mb2 lh-copy fw5 f3">Importing employees</h1>
+  <p class="f6 mb4 mt0 gray">Published on <span class="dt-published" datetime="2021-02-14 12:00:00">February 14, 2021</span></p>
+
+  
+  
+  <div class="f4">
+    <p>I've been working on <a href="https://officelife.io">OfficeLife</a> for more than two years now, silently, patiently and very consistently. The number of features keeps growing, which makes me happy.</p>
+
+<p>The goal of OfficeLife is to manage everything employees do in a company. From projects to time tracking to holidays.
+However, there is no point for anyone to use the software if we don’t offer a simple way to import employees to the system in the first place.</p>
+
+<p>The strength of OfficeLife appears when <em>all</em> the employees use the system.</p>
+
+<p>In OfficeLife, right now, you can add employees, one by one, by hand. But who would use the Add employee screen 500 times to import a list from a medium-size company?</p>
+
+<p>When I started developing OfficeLife, I wanted to provide a simple way to populate an account. This would serve two purposes:</p>
+
+<ul>
+<li>provide test data for developers on the project, so they can dive in the code right away and have a solid set of data ready for them to play with,</li>
+<li>provide a demo account on <a href="https://officelife.io">OfficeLife.io</a>, that would have realistic data that use all the features, so potential users/buyers can see quickly what the tool can do.</li>
+</ul>
+
+<p>Very early in the development process, I wrote a <a href="https://laravel.com/docs/master/artisan#writing-commands">Laravel command</a> that populate an account with realistic data. I <a href="./a_lazy_approach_to_demonstrate_what_your_product_can_do_for_your_users_the_Laravel_way">wrote about it here</a>. This served me well and still does today. I run this command every day. So I postponed the ability to import actual, real data, because I didn't need it. And also because uploading files is always a pain, no matter the framework, and can lead to many errors.</p>
+
+<p>However, the future users of my tool will want to import employees so they can start using it. I can’t postpone the feature any longer.</p>
+
+<p>There are two main things we could do about importing users.</p>
+
+<ul>
+<li>The first one is to connect OfficeLife to an Active Directory. A lot of companies use AD to manage the list of users. But I’m unsure right now if the companies which would be interested into what OfficeLife offers, actually use AD at all. Supporting AD in OfficeLife would be very costly at first, because I have no idea on how that works. Fortunately, there are some libraries for Laravel for this, but still, it would take a least a full month of work to make this happen, at the very minimum – for a feature that I’m not 100% sure people would use.</li>
+<li>The second option would be to import a CSV.</li>
+</ul>
+
+<p>So I’m currently implementing the feature to upload a CSV of employees.</p>
+
+<p>Like always in programming, there are many ways to write the feature.</p>
+
+<p>Here is what I've decided to do (and I hope I won’t regret it in the future). It will be a three-step procedure:</p>
+
+<ul>
+<li>The user will upload a CSV. The user HAS to follow a strict convention to match the column names etc...</li>
+<li>Right after uploading the file, we will display a table showing all the entries in the file and for each line, if we've encountered any errors during upload (like a duplicated email address, or a malformed CSV).</li>
+<li>The user can review this table and decide if (s)he wants to actually import this data to the system. If (s)he agrees, actually create employees for each entry.</li>
+</ul>
+
+<p>In programming terms, here is what it translates to:</p>
+
+<ul>
+<li>write a service that lets me import a file, regardless of the nature of the file. This brings the File object in my codebase. I will need the File object for many other aspects of the project anyway: adding receipts to expenses, avatars, on-boarding documents,...</li>
+<li>Before parsing the uploaded file, create an ImportJob. Parse the uploaded file, and for each line, create an ImportJobReport entry. This will contain the name, email etc... of each potential employee. Also, this lets me check that the entry is valid.</li>
+<li>Once the user agrees to import this data, we will call the <code>AddEmployeeToCompany</code> service for each one of these lines.</li>
+</ul>
+
+<p>This is a bit complex, but the process will make sure we won’t import crap data to the system.</p>
+  </div>
+
+  <div class="tc mt6 bb b--black-20 pb4 mb4">
+    <div class="">
+      <img src="/assets/img/avatar.png" alt="avatar regis freyd">
+    </div>
+    <p>Regis Freyd is an indie hacker living in Montreal. He’s the author of the popular open source personal CRM <a href="https://github.com/monicahq/monica">Monica</a>. You should <a href="https://twitter.com/djaiss">follow him on Twitter</a>.</p>
+  </div>
+
+  <nav class="flex justify-between">
+    <div>
+            <a href="https://regisfreyd.com/a_lazy_approach_to_demonstrate_what_your_product_can_do_for_your_users_the_Laravel_way" title="Older Post: A lazy approach to demonstrate what your product can do for your users, the Laravel way">
+        &LeftArrow; A lazy approach to demonstrate what your product can do for your users, the Laravel way
+      </a>
+          </div>
+
+    <div>
+          </div>
+  </nav>
+</div>
+
+<p class="tc mb2">Hi from Canada 🇨🇦</p>
+<p class="f6 lh-copy">You are not being tracked. Analytics of this site are provided by <a href="https://usefathom.com/ref/APPNBJ">Fathom</a>, a privacy-friendly analytics tool.</p>
+
+  </main>
+
+    <!-- Fathom - simple website analytics - https://usefathom.com -->
+  <script>
+    (function(f, a, t, h, o, m) {
+      a[h] = a[h] || function() {
+        (a[h].q = a[h].q || []).push(arguments)
+      };
+      o = f.createElement('script'),
+        m = f.getElementsByTagName('script')[0];
+      o.async = 1;
+      o.src = t;
+      o.id = 'fathom-script';
+      m.parentNode.insertBefore(o, m)
+    })(document, window, 'https://cdn.usefathom.com/tracker.js', 'fathom');
+    fathom('set', 'siteId', 'HHOPDHUN');
+    fathom('trackPageview');
+  </script>
+  <!-- / Fathom -->
+  </body>
+
+</html>

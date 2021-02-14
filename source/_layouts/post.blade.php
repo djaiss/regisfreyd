@@ -19,7 +19,7 @@
 <div class="blog-post h-entry mb5 bb b--black-20 pb4">
   <div class="mb4">&LeftArrow; <a href="/">Back to homepage</a></div>
   <h1 class="p-name mb2 lh-copy fw5 f3">{{ $page->title }}</h1>
-  <p class="f6 mb4 mt0 gray">Written by <a href="{{ $page->twitter_author }}" class="p-author h-card">{{ $page->author }}</a> and published on <span class="dt-published" datetime="{{ date('Y-m-d 12:00:00', $page->date) }}">{{ date('F j, Y', $page->date) }}</span></p>
+  <p class="f6 mb4 mt0 gray">Published on <span class="dt-published" datetime="{{ date('Y-m-d 12:00:00', $page->date) }}">{{ date('F j, Y', $page->date) }}</span></p>
 
   @if ($page->cover_image)
   <img src="{{ $page->cover_image }}" alt="{{ $page->title }} cover image" class="mb-2">
@@ -39,7 +39,7 @@
     <div class="">
       <img src="/assets/img/avatar.png" alt="avatar regis freyd">
     </div>
-    <p>Regis Freyd is a full stack product maker living in Montreal. He’s the author of the popular open source personal CRM <a href="https://github.com/monicahq/monica">Monica</a>. You should <a href="https://twitter.com/djaiss">follow him on Twitter</a>.</p>
+    <p>Regis Freyd is an indie hacker living in Montreal. He’s the author of the popular open source personal CRM <a href="https://github.com/monicahq/monica">Monica</a>. You should <a href="https://twitter.com/djaiss">follow him on Twitter</a>.</p>
   </div>
 
   <nav class="flex justify-between">
