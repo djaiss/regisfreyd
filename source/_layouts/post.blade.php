@@ -31,7 +31,7 @@
   @endforeach
   @endif
 
-  <div class="f4">
+  <div class="f5">
     @yield('content')
   </div>
 
