@@ -49,10 +49,10 @@
     <div class="mb5 flex justify-between">
       <ul class="list pa0">
         <li class="di">
-          <a href="/" class="mr2">Home</a>
+          <a href="/" class="mr4"><span class="mr1">👋</span> Home</a>
         </li>
         <li class="di">
-          <a href="/about" class="mr2">About</a>
+          <a href="/about" class="mr2"><span class="mr1">😀</span> About</a>
         </li>
       </ul>
       <ul class="list pa0">

@@ -48,4 +48,3 @@ In programming terms, here is what it translates to:
 * Once the user agrees to import this data, we will call the `AddEmployeeToCompany` service for each one of these lines.
 
 This is a bit complex, but the process will make sure we won’t import crap data to the system.
-

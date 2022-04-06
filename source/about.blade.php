@@ -16,8 +16,6 @@
     <p class="lh-copy">I'm an <a href="https://www.indiehackers.com/start">indie hacker</a> working mainly on OfficeLife and Monica in my spare time, currently living in Montréal.</p>
     <p class="lh-copy">I like working on products that improve people’s lives. I work in the open, and everything I do is <a href="https://github.com/djaiss">freely available</a>.</p>
     <p class="lh-copy">In the past, I worked at <a href="https://gitlab.com">GitLab</a>, <a href="https://cakemail.com">Cakemail</a> and <a href="https://dailymotion.com">Dailymotion</a> as product manager.</p>
-    <p class="lh-copy">While I’m originally from France, I’ve lived in many countries (UK, Mali, Ivory Coast, Guinea and now Canada) and visited many more.</p>
-    <p class="lh-copy">Right now, my focus is on my family and growing my side projects to businesses that can support me full time. I document my journey on Twitter. You should <a href="https://twitter.com/djaiss">follow me</a> if you want want real time updates on how it’s going on.</p>
   </div>
 
 </div>
@@ -76,6 +74,13 @@
 <h2 class="fw4 f4">Work highlights</h2>
 
 <div class="mb5">
+  <div class="flex items-start mb3">
+    <div class="flex items-center mr3 lh-copy gray">
+      &#8203;
+      2022
+    </div>
+    <span class="lh-copy">Senior Director Digital Strategy at National Bank of Canada</span>
+  </div>
   <div class="flex items-start mb3">
     <div class="flex items-center mr3 lh-copy gray">
       &#8203;
