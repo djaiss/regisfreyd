@@ -37,9 +37,9 @@
 
   <div class="tc mt6 bb b--black-20 pb4 mb4">
     <div class="">
-      <img src="/assets/img/avatar.png" alt="avatar regis freyd">
+      <img src="/assets/img/avatar.png" alt="avatar">
     </div>
-    <p>Hi. I'm Regis, an indie hacker living in Montreal. I'm the author of the popular open source personal CRM <a href="https://github.com/monicahq/monica">Monica</a>. You should <a href="https://twitter.com/djaiss">follow me on Twitter</a>.</p>
+    <p>Hi. I'm Regis. I've created the popular open source personal CRM <a href="https://github.com/monicahq/monica">Monica</a>. You should <a href="https://twitter.com/maazarin">follow me on Twitter</a>.</p>
   </div>
 
   <nav class="flex justify-between">
@@ -62,6 +62,5 @@
 </div>
 
 <p class="tc mb2">Hi from Canada 🇨🇦</p>
-<p class="f6 lh-copy">You are not being tracked. Analytics of this site are provided by <a href="https://usefathom.com/ref/APPNBJ">Fathom</a>, a privacy-friendly analytics tool.</p>
 
 @endsection
