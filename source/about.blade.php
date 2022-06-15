@@ -10,12 +10,11 @@
 @section('body')
 
 <div class="flex mb5">
-  <img src="/assets/img/picture.png" class="self-center br3 mr3" alt="regis freyd picture">
+  <img src="/assets/img/picture.png" class="self-center br3 mr3" alt="avatar">
 
   <div>
-    <p class="lh-copy">I'm an <a href="https://www.indiehackers.com/start">indie hacker</a> working mainly on OfficeLife and Monica in my spare time, currently living in Montréal.</p>
-    <p class="lh-copy">I like working on products that improve people’s lives. I work in the open, and everything I do is <a href="https://github.com/djaiss">freely available</a>.</p>
-    <p class="lh-copy">In the past, I worked at <a href="https://gitlab.com">GitLab</a>, <a href="https://cakemail.com">Cakemail</a> and <a href="https://dailymotion.com">Dailymotion</a> as product manager.</p>
+    <p class="lh-copy">I'm an <a href="https://www.indiehackers.com/start">indie hacker</a> working mainly on OfficeLife and Monica in my spare time, living in Montréal.</p>
+    <p class="lh-copy">I like working on products that improve people’s lives. I work in the open, meaning that everything I do is <a href="https://github.com/djaiss">freely available</a>.</p>
   </div>
 
 </div>
