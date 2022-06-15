@@ -13,9 +13,7 @@
 @section('body')
 
 <p>Hi 👋</p>
-<p class="lh-copy">I’m Regis, a developer, product designer and <a href="https://www.indiehackers.com/start">indie-hacker</a> based in Montréal, and quite active in <a href="https://github.com/djaiss">the open source community</a>. I’m currently building <a href="https://officelife.io">OfficeLife</a>, an open-source ERP for humans.</p>
-<p class="lh-copy">The most successful project I've created and still maintain is <a href="https://monicahq.com">Monica</a>, an open source personal CRM. You can read more about me on the <a href="/about">About page</a>.</p>
-<p class="lh-copy mb5">You should follow me on Twitter (<a href="https://twitter.com/djaiss">@djaiss</a>).</p>
+<p class="lh-copy">My name is Regis. I've created <a href="https://monicahq.com">Monica</a>, an open source personal CRM, and <a href="https://officelife.io">OfficeLife</a>, an open source HR system.</p>
 
 <h2 class="fw4 f4">Latest posts</h2>
 
@@ -36,7 +34,7 @@
       &#8203;
       Twitter
     </div>
-    <span class="lh-copy"><a href="https://twitter.com/djaiss">@djaiss</a></span>
+    <span class="lh-copy"><a href="https://twitter.com/maazarin">@maazarin</a></span>
   </div>
   <div class="flex items-start mb3">
     <div class="flex items-center mr3 lh-copy gray w3">
