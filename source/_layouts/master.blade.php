@@ -45,22 +45,19 @@
 </head>
 
 <body>
-  <main role="main" class="mw7 center mt5-ns mt1 ph3 ph0-ns">
+  <main role="main" class="mw6 center mt5-ns mt1 ph3 ph0-ns">
     <div class="mb5 flex justify-between">
-      <ul class="list pa0">
+      <ul class="list pa0 f6">
         <li class="di">
-          <a href="/" class="mr4"><span class="mr1">👋</span> Home</a>
+          <a href="/" class="mr4">Home</a>
         </li>
         <li class="di">
-          <a href="/about" class="mr2"><span class="mr1">😀</span> About</a>
+          <a href="/about" class="mr2">About</a>
         </li>
       </ul>
-      <ul class="list pa0">
+      <ul class="list pa0 f6">
         <li class="di">
-          <a href="/blog/feed.atom" class="mr2">RSS feed</a>
-        </li>
-        <li class="di">
-          <a href="https://twitter.com/djaiss">Twitter</a>
+          <a href="https://twitter.com/maazarin">Twitter</a>
         </li>
       </ul>
     </div>

@@ -13,7 +13,7 @@
   <img src="/assets/img/picture.png" class="self-center br3 mr3" alt="avatar">
 
   <div>
-    <p class="lh-copy">I'm an <a href="https://www.indiehackers.com/start">indie hacker</a> working mainly on OfficeLife and Monica in my spare time, living in Montréal.</p>
+    <p class="lh-copy">I'm a developer working mainly on OfficeLife and Monica in my spare time, living in Montréal.</p>
     <p class="lh-copy">I like working on products that improve people’s lives. I work in the open, meaning that everything I do is <a href="https://github.com/djaiss">freely available</a>.</p>
   </div>
 
@@ -70,67 +70,6 @@
   </div>
 </div>
 
-<h2 class="fw4 f4">Work highlights</h2>
-
-<div class="mb5">
-  <div class="flex items-start mb3">
-    <div class="flex items-center mr3 lh-copy gray">
-      &#8203;
-      2022
-    </div>
-    <span class="lh-copy">Senior Director Digital Strategy at National Bank of Canada</span>
-  </div>
-  <div class="flex items-start mb3">
-    <div class="flex items-center mr3 lh-copy gray">
-      &#8203;
-      2019
-    </div>
-    <span class="lh-copy">Director of Product at Quebecor</span>
-  </div>
-  <div class=" flex items-start mb3">
-    <div class="flex items-center mr3 lh-copy gray">
-      &#8203;
-      2017
-    </div>
-    <span class="lh-copy">Launched <a href="https://github.com/monicahq/monica">Monica</a>, a personal CRM, released as open source with 40k users and 5M+ downloads</span>
-  </div>
-  <div class="flex items-start mb3">
-    <div class="flex items-center mr3 lh-copy gray">
-      &#8203;
-      2016
-    </div>
-    <span class="lh-copy">Product manager at <a href="https://about.gitlab.com">GitLab</a></span>
-  </div>
-  <div class="flex items-start mb3">
-    <div class="flex items-center mr3 lh-copy gray">
-      &#8203;
-      2011
-    </div>
-    <span class="lh-copy">Product designer, and after, Director of Product at <a href="https://cakemail.com">CakeMail</a></span>
-  </div>
-  <div class="flex items-start mb3">
-    <div class="flex items-center mr3 lh-copy gray">
-      &#8203;
-      2011
-    </div>
-    <span class="lh-copy">Launched <a href="https://totalwireframe.com">Totalwireframe</a>, selling Axure libraries to 1600 companies, including Blizzard and Siemens</span>
-  </div>
-  <div class="flex items-start mb3">
-    <div class="flex items-center mr3 lh-copy gray">
-      &#8203;
-      2008
-    </div>
-    <span class="lh-copy">UX designer at SidLee</span>
-  </div>
-  <div class="flex items-start mb3">
-    <div class="flex items-center mr3 lh-copy gray">
-      &#8203;
-      2007
-    </div>
-    <span class="lh-copy">Product manager at Dailymotion</span>
-  </div>
-</div>
-
 <h2 class="fw4 f4">Latest shots on <a href="https://dribbble.com/djaiss">Dribbble</a></h2>
 
 <div class="flex mb3">
@@ -167,7 +106,7 @@
       &#8203;
       Twitter
     </div>
-    <span class="lh-copy"><a href="https://twitter.com/djaiss">@djaiss</a></span>
+    <span class="lh-copy"><a href="https://twitter.com/maazarin">@maazarin</a></span>
   </div>
   <div class="flex items-start mb3">
     <div class="flex items-center mr3 lh-copy gray w3">

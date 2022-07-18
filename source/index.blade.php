@@ -12,16 +12,32 @@
 
 @section('body')
 
-<p>Hi 👋</p>
-<p class="lh-copy">My name is Regis. I've created <a href="https://monicahq.com">Monica</a>, an open source personal CRM, and <a href="https://officelife.io">OfficeLife</a>, an open source HR system.</p>
+<p class="fw6">Hi 👋</p>
+<p class="lh-copy mb5">My name is Regis. I've created <a href="https://monicahq.com">Monica</a>, an open source personal CRM, and <a href="https://officelife.io">OfficeLife</a>, an open source HR system.</p>
 
-<h2 class="fw4 f4">Latest posts</h2>
+<h2 class="fw4 f4">Comics</h2>
+@php
+  $latestComics = $comics->sortByDesc('id')->take(3)->all();
+@endphp
+
+<ul class="list mb5 pl0">
+  @foreach ($latestComics as $comic)
+  <li class="h-entry mb3 lh-copy">
+    <img src="{{ $comic->img }}" class="db index-img">
+    <a href="{{ $comic->getUrl() }}" title="Read more - {{ $comic->title }}" class="p-name f5 fw5">{{ $comic->title }}</a>
+    <span class="db f7 gray">{{ date('F j, Y', $comic->date) }}</span>
+  </li>
+  @endforeach
+</ul>
+
+
+<h2 class="fw4 f4">Posts</h2>
 
 <ul class="list mb5 pl0">
   @foreach ($posts as $post)
   <li class="h-entry mb3 lh-copy">
-    <a href="{{ $post->getUrl() }}" title="Read more - {{ $post->title }}" class="p-name f4">{{ $post->title }}</a>
-    <span class="db f6">{{ date('F j, Y', $post->date) }}</span>
+    <a href="{{ $post->getUrl() }}" title="Read more - {{ $post->title }}" class="p-name f5 fw5">{{ $post->title }}</a>
+    <span class="db f7 gray">{{ date('F j, Y', $post->date) }}</span>
   </li>
   @endforeach
 </ul>
