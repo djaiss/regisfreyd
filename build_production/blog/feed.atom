@@ -3,14 +3,57 @@
     <title>Regis Freyd</title>
     <link href="https://regisfreyd.com" />
     <link type="application/atom+xml" rel="self" href="https://regisfreyd.com/blog/feed.atom" />
-    <updated>2022-04-06T15:53:45+00:00</updated>
+    <updated>2022-07-19T23:22:10+00:00</updated>
     <id>https://regisfreyd.com/blog/feed.atom</id>
     <author>
         <name>Regis Freyd</name>
     </author>
                 <entry>
-    <id>https://regisfreyd.com/validate-your-ideas-before-doing-anything-vs-actually-doing-stuff</id>
-    <link type="text/html" rel="alternate" href="https://regisfreyd.com/validate-your-ideas-before-doing-anything-vs-actually-doing-stuff" />
+    <id>https://regisfreyd.com/2022-07-18-why-i-post-what-i-post</id>
+    <link type="text/html" rel="alternate" href="https://regisfreyd.com/2022-07-18-why-i-post-what-i-post" />
+    <title>Why I post what I post</title>
+    <published>2022-07-18T00:00:00+00:00</published>
+    <updated>2022-07-18T00:00:00+00:00</updated>
+    <author>
+        <name>Regis Freyd</name>
+    </author>
+    <summary type="html">On Twitter these days, there is two kinds of tweets:
+
+
+People complaining about stuff.
+People teaching life lessons that they probably didn’t experience themselves.
+
+
+The first category doesn’t bring any value to anyone, apart from the author who......</summary>
+    <content type="html"><![CDATA[
+        <p>On Twitter these days, there is two kinds of tweets:</p>
+
+<ol>
+<li>People complaining about stuff.</li>
+<li>People teaching life lessons that they probably didn’t experience themselves.</li>
+</ol>
+
+<p>The first category doesn’t bring any value to anyone, apart from the author who feels good after shouting in this empty space that Internet can be. No one cares about you being upset about something, not even the brand you are complaining about.</p>
+
+<p>The second category also doesn’t bring real value because reading about the 10 novel ways to be happy in life won’t make you feel happy in life. Also, it seems super fake.</p>
+
+<p>So what posts should you write? No idea.</p>
+
+<p>I don’t have a clue about how to grow a social media account and I have definitive proof of that. I have no advice to give on anything, because I don’t know much.</p>
+
+<p>But here is what I like to read: jokes and news about stuff that people are trying to build (aka what value are you adding to the world every day).</p>
+
+<p>This is why I focus personally on these two types of posts:</p>
+
+<ol>
+<li>Funny tweets (this includes jokes that I hope make you smile and drawings made on my iPad)</li>
+<li>Stuff that I’m building.</li>
+</ol>
+    ]]></content>
+</entry>
+            <entry>
+    <id>https://regisfreyd.com/2022-04-06-validate-your-ideas-before-doing-anything-vs-actually-doing-stuff</id>
+    <link type="text/html" rel="alternate" href="https://regisfreyd.com/2022-04-06-validate-your-ideas-before-doing-anything-vs-actually-doing-stuff" />
     <title>Validate your ideas before doing anything vs actually doing stuff</title>
     <published>2022-04-06T00:00:00+00:00</published>
     <updated>2022-04-06T00:00:00+00:00</updated>
@@ -43,8 +86,8 @@ As far as I know, this comes mainly from the......</summary>
     ]]></content>
 </entry>
             <entry>
-    <id>https://regisfreyd.com/importing-employees</id>
-    <link type="text/html" rel="alternate" href="https://regisfreyd.com/importing-employees" />
+    <id>https://regisfreyd.com/2021-02-14-importing-employees</id>
+    <link type="text/html" rel="alternate" href="https://regisfreyd.com/2021-02-14-importing-employees" />
     <title>Importing employees</title>
     <published>2021-02-14T00:00:00+00:00</published>
     <updated>2021-02-14T00:00:00+00:00</updated>
@@ -106,8 +149,8 @@ However, there is no point for anyone to use the software if we don’t offer a 
     ]]></content>
 </entry>
             <entry>
-    <id>https://regisfreyd.com/a_lazy_approach_to_demonstrate_what_your_product_can_do_for_your_users_the_Laravel_way</id>
-    <link type="text/html" rel="alternate" href="https://regisfreyd.com/a_lazy_approach_to_demonstrate_what_your_product_can_do_for_your_users_the_Laravel_way" />
+    <id>https://regisfreyd.com/2020-08-21-a_lazy_approach_to_demonstrate_what_your_product_can_do_for_your_users_the_Laravel_way</id>
+    <link type="text/html" rel="alternate" href="https://regisfreyd.com/2020-08-21-a_lazy_approach_to_demonstrate_what_your_product_can_do_for_your_users_the_Laravel_way" />
     <title>A lazy approach to demonstrate what your product can do for your users, the Laravel way</title>
     <published>2020-08-21T00:00:00+00:00</published>
     <updated>2020-08-21T00:00:00+00:00</updated>
@@ -203,8 +246,8 @@ When you provide an open-source version of your software, you need to be very ca
     ]]></content>
 </entry>
             <entry>
-    <id>https://regisfreyd.com/laravel-test-job-dispatches-other-jobs</id>
-    <link type="text/html" rel="alternate" href="https://regisfreyd.com/laravel-test-job-dispatches-other-jobs" />
+    <id>https://regisfreyd.com/2020-08-15-laravel-test-job-dispatches-other-jobs</id>
+    <link type="text/html" rel="alternate" href="https://regisfreyd.com/2020-08-15-laravel-test-job-dispatches-other-jobs" />
     <title>How to test that a job dispatches another job in Laravel</title>
     <published>2020-08-15T00:00:00+00:00</published>
     <updated>2020-08-15T00:00:00+00:00</updated>
@@ -229,8 +272,8 @@ The only way to know if the second......</summary>
     ]]></content>
 </entry>
             <entry>
-    <id>https://regisfreyd.com/email-is-not-broken</id>
-    <link type="text/html" rel="alternate" href="https://regisfreyd.com/email-is-not-broken" />
+    <id>https://regisfreyd.com/2020-08-04-email-is-not-broken</id>
+    <link type="text/html" rel="alternate" href="https://regisfreyd.com/2020-08-04-email-is-not-broken" />
     <title>Email is not broken</title>
     <published>2020-08-04T00:00:00+00:00</published>
     <updated>2020-08-04T00:00:00+00:00</updated>
@@ -310,8 +353,8 @@ I don&#039;t have any of these problems. Email is not broken at all for me. And 
     ]]></content>
 </entry>
             <entry>
-    <id>https://regisfreyd.com/documentation-driven-development</id>
-    <link type="text/html" rel="alternate" href="https://regisfreyd.com/documentation-driven-development" />
+    <id>https://regisfreyd.com/2020-08-03-documentation-driven-development</id>
+    <link type="text/html" rel="alternate" href="https://regisfreyd.com/2020-08-03-documentation-driven-development" />
     <title>Documentation Driven Development</title>
     <published>2020-08-03T00:00:00+00:00</published>
     <updated>2020-08-03T00:00:00+00:00</updated>
@@ -405,50 +448,8 @@ Push features to......</summary>
     ]]></content>
 </entry>
             <entry>
-    <id>https://regisfreyd.com/understanding-software-licences</id>
-    <link type="text/html" rel="alternate" href="https://regisfreyd.com/understanding-software-licences" />
-    <title>Zine - understanding software licences (part 2)</title>
-    <published>2020-07-13T00:00:00+00:00</published>
-    <updated>2020-07-13T00:00:00+00:00</updated>
-    <author>
-        <name>Regis Freyd</name>
-    </author>
-    <summary type="html">...</summary>
-    <content type="html"><![CDATA[
-        <p><img src="/assets/img/understanding_software_licences_part_2.png" alt="understanding software licences part 2" /></p>
-    ]]></content>
-</entry>
-            <entry>
-    <id>https://regisfreyd.com/understanding-software-licences</id>
-    <link type="text/html" rel="alternate" href="https://regisfreyd.com/understanding-software-licences" />
-    <title>Zine - understanding software licences (part 1)</title>
-    <published>2020-07-12T00:00:00+00:00</published>
-    <updated>2020-07-12T00:00:00+00:00</updated>
-    <author>
-        <name>Regis Freyd</name>
-    </author>
-    <summary type="html">...</summary>
-    <content type="html"><![CDATA[
-        <p><img src="/assets/img/understanding_software_licences_part_1.png" alt="understanding software licences part 1" /></p>
-    ]]></content>
-</entry>
-            <entry>
-    <id>https://regisfreyd.com/a-developers-guide-to-create-a-blog</id>
-    <link type="text/html" rel="alternate" href="https://regisfreyd.com/a-developers-guide-to-create-a-blog" />
-    <title>A developer&#039;s guide to create a blog</title>
-    <published>2020-06-18T00:00:00+00:00</published>
-    <updated>2020-06-18T00:00:00+00:00</updated>
-    <author>
-        <name>Regis Freyd</name>
-    </author>
-    <summary type="html">...</summary>
-    <content type="html"><![CDATA[
-        <p><img src="/assets/img/a-developers-guide-to-create-a-blog.jpeg" alt="A developer s guide to create a blog" /></p>
-    ]]></content>
-</entry>
-            <entry>
-    <id>https://regisfreyd.com/how-i-work-2020-edition</id>
-    <link type="text/html" rel="alternate" href="https://regisfreyd.com/how-i-work-2020-edition" />
+    <id>https://regisfreyd.com/2020-05-13-how-i-work-2020-edition</id>
+    <link type="text/html" rel="alternate" href="https://regisfreyd.com/2020-05-13-how-i-work-2020-edition" />
     <title>How I work (2020 edition)</title>
     <published>2020-05-13T00:00:00+00:00</published>
     <updated>2020-05-13T00:00:00+00:00</updated>
@@ -546,8 +547,8 @@ After years of working with Sublime Text and......</summary>
     ]]></content>
 </entry>
             <entry>
-    <id>https://regisfreyd.com/apple-music-is-better-than-spotify</id>
-    <link type="text/html" rel="alternate" href="https://regisfreyd.com/apple-music-is-better-than-spotify" />
+    <id>https://regisfreyd.com/2020-05-02-apple-music-is-better-than-spotify</id>
+    <link type="text/html" rel="alternate" href="https://regisfreyd.com/2020-05-02-apple-music-is-better-than-spotify" />
     <title>Apple Music is better than Spotify</title>
     <published>2020-05-02T00:00:00+00:00</published>
     <updated>2020-05-02T00:00:00+00:00</updated>
@@ -652,8 +653,8 @@ After years of working with Sublime Text and......</summary>
     ]]></content>
 </entry>
             <entry>
-    <id>https://regisfreyd.com/single-point-of-contact</id>
-    <link type="text/html" rel="alternate" href="https://regisfreyd.com/single-point-of-contact" />
+    <id>https://regisfreyd.com/2020-02-25-single-point-of-contact</id>
+    <link type="text/html" rel="alternate" href="https://regisfreyd.com/2020-02-25-single-point-of-contact" />
     <title>Have a single point of contact for your side project</title>
     <published>2020-02-25T00:00:00+00:00</published>
     <updated>2020-02-25T00:00:00+00:00</updated>
