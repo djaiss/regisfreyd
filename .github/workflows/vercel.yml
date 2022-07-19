@@ -35,7 +35,7 @@ jobs:
                   CI: true
 
             - name: Create production build of CSS and JS
-              run: yarn run prod
+              run: yarn run production
 
             - name: Restore Composer dependencies
               id: cache-php
