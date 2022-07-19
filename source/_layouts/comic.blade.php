@@ -16,36 +16,27 @@
 @endpush
 
 @section('body')
-<div class="blog-post h-entry mb5 bb b--black-20 pb4">
-  <div class="mb4">&LeftArrow; <a href="/">Back to homepage</a></div>
-  <h1 class="p-name mb0 lh-copy fw5 f3">{{ $page->title }}</h1>
-  <p class="f6 mb4 mt0 gray">Published on <span class="dt-published" datetime="{{ date('Y-m-d 12:00:00', $page->date) }}">{{ date('F j, Y', $page->date) }}</span></p>
+<div class="mx-auto max-w-2xl mb-4 sm:mb-20 p-4 sm:p-0">
+  <div class="mb-4">&LeftArrow; <a href="/" class="text-sm underline decoration-sky-500 hover:decoration-2">Back to homepage</a></div>
+  <h1 class="p-name mb0 lh-copy font-bold text-xl">
+    {{ $page->title }}
+    <span class="bg-blue-100 text-blue-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800"># {{ $page->id }}</span>
+  </h1>
+  <p class="text-xs mb-4 mt-1 text-gray-500">Published on <span class="dt-published" datetime="{{ date('Y-m-d 12:00:00', $page->date) }}">{{ date('F j, Y', $page->date) }}</span></p>
 
-  @if ($page->cover_image)
-  <img src="{{ $page->cover_image }}" alt="{{ $page->title }} cover image" class="mb-2">
-  @endif
-
-  @if ($page->categories)
-  @foreach ($page->categories as $i => $category)
-  <a href="{{ '/blog/categories/' . $category }}" title="View posts in {{ $category }}" class="inline-block bg-gray-300 hover:bg-blue-200 leading-loose tracking-wide text-gray-800 uppercase text-xs font-semibold rounded mr-4 px-3 pt-px">{{ $category }}</a>
-  @endforeach
-  @endif
-
-  <div class="f5">
-    @yield('content')
+  <div class="post mb-12">
+    <a href="{{ $page->img }}">
+      <img src="{{ $page->img }}" />
+    </a>
   </div>
 
-  <div class="tc mt6 bb b--black-20 pb4 mb4">
-    <div class="">
-      <img src="/assets/img/avatar.png" alt="avatar">
-    </div>
-    <p>Hi. I'm Regis. I've built the popular open source personal CRM <a href="https://github.com/monicahq/monica">Monica</a>. I'm <a href="https://twitter.com/maazarin">on Twitter</a> also.</p>
+  <div class="mb-2 text-xs">
+    <p>Other comics</p>
   </div>
-
   <nav class="flex justify-between">
     <div>
       @if ($next = $page->getNext())
-      <a href="{{ $next->getUrl() }}" title="Older Post: {{ $next->title }}">
+      <a href="{{ $next->getUrl() }}" class="underline decoration-sky-500 hover:decoration-2" title="Older Post: {{ $next->title }}">
         &LeftArrow; {{ $next->title }}
       </a>
       @endif
@@ -53,7 +44,7 @@
 
     <div>
       @if ($previous = $page->getPrevious())
-      <a href="{{ $previous->getUrl() }}" title="Newer Post: {{ $previous->title }}">
+      <a href="{{ $previous->getUrl() }}" class="underline decoration-sky-500 hover:decoration-2" title="Newer Post: {{ $previous->title }}">
         {{ $previous->title }} &RightArrow;
       </a>
       @endif
@@ -61,6 +52,8 @@
   </nav>
 </div>
 
-<p class="tc mb2">Hi from Canada 🇨🇦</p>
+<div class="mx-auto max-w-2xl mb-4 sm:mb-20 p-4 sm:p-0">
+  <p class="text-center mb-2">Hi from Canada 🇨🇦</p>
+</div>
 
 @endsection

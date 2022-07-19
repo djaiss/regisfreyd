@@ -1,34 +1,28 @@
 let mix = require('laravel-mix');
+let tailwind = require('tailwindcss');
 let build = require('./tasks/build.js');
-let tailwindcss = require('tailwindcss');
 require('laravel-mix-purgecss');
 
 mix.disableSuccessNotifications();
-mix.setPublicPath('source/assets/build/');
+mix.setPublicPath('source/assets/');
 mix.webpackConfig({
-    plugins: [
-        build.jigsaw,
-        build.browserSync(),
-        build.watch([
-            'config.php',
-            'source/**/*.md',
-            'source/**/*.php',
-            'source/**/*.scss',
-        ]),
-    ],
+  plugins: [
+    build.jigsaw,
+    build.browserSync(),
+    build.watch(['source/**/*.md', 'source/**/*.php', 'source/_assets/**/*', '!source/**/_tmp/*', '!source/assets/**/*']),
+  ]
 });
 
-mix.js('source/_assets/js/main.js', 'js')
-    .sourceMaps()
-    .sass('source/_assets/sass/main.scss', 'css/main.css')
-    .sourceMaps()
-    .options({
-        processCssUrls: false,
-        postCss: [tailwindcss()],
-    })
-    .purgeCss({
-        extensions: ['html', 'md', 'js', 'php', 'vue'],
-        folders: ['source'],
-        whitelistPatterns: [/language/, /hljs/, /mce/],
-    })
-    .version();
+mix.options({
+    processCssUrls: false,
+    postCss: [
+      require('postcss-import'),
+      tailwind(),
+    ]
+  })
+  .postCss('source/_assets/css/main.css', 'css/main.css')
+  .js('source/_assets/js/main.js', 'js')
+  .purgeCss({
+    folders: ['source'],
+  })
+  .version();

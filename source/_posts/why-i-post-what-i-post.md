@@ -3,7 +3,7 @@ extends: _layouts.post
 section: content
 title: Why I post what I post
 date: 2022-07-18
-slug: why-i-post-what-i-post.md
+slug: why-i-post-what-i-post
 categories:
 description: I try to not be negative and provide a bit of value to the world.
 ---

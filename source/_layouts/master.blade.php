@@ -20,7 +20,7 @@
 
   @stack('meta')
 
-  <link rel="stylesheet" href="{{ mix('css/main.css', 'assets/build') }}">
+  <link rel="stylesheet" href="{{ mix('css/main.css') }}">
 
   <script language="JavaScript">
     function unScramble(eMail1, eMail2, linkText, subjectText, statusText) {
@@ -45,25 +45,23 @@
 </head>
 
 <body>
-  <main role="main" class="mw6 center mt5-ns mt1 ph3 ph0-ns">
-    <div class="mb5 flex justify-between">
-      <ul class="list pa0 f6">
-        <li class="di">
-          <a href="/" class="mr4">Home</a>
+  <div class="mx-auto max-w-2xl flex justify-between mt-4 mb-8 sm:p-0 p-4">
+      <ul class="">
+        <li class="inline">
+          <a href="/" class="mr-4 font-bold underline decoration-sky-500 hover:decoration-2">Home</a>
         </li>
-        <li class="di">
-          <a href="/about" class="mr2">About</a>
-        </li>
-      </ul>
-      <ul class="list pa0 f6">
-        <li class="di">
-          <a href="https://twitter.com/maazarin">Twitter</a>
+        <li class="inline">
+          <a href="/about" class="font-bold underline decoration-sky-500 hover:decoration-2">About</a>
         </li>
       </ul>
-    </div>
+      <ul class="">
+        <li class="inline">
+          <a href="https://twitter.com/maazarin" class="font-bold underline decoration-sky-500 hover:decoration-2">Twitter</a>
+        </li>
+      </ul>
+  </div>
 
-    @yield('body')
-  </main>
+  @yield('body')
 
   @if ($page->production)
   <!-- Fathom - simple website analytics - https://usefathom.com -->

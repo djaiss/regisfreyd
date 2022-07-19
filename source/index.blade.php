@@ -12,66 +12,77 @@
 
 @section('body')
 
-<p class="fw6">Hi 👋</p>
-<p class="lh-copy mb5">My name is Regis. I've created <a href="https://monicahq.com">Monica</a>, an open source personal CRM, and <a href="https://officelife.io">OfficeLife</a>, an open source HR system.</p>
+<div class="mx-auto max-w-2xl mb-4 sm:mb-20 p-4 sm:p-0">
+  <p class="font-medium mb-4">Hi 👋</p>
+  <p class=" mb5">My name is Regis. I've created <a href="https://monicahq.com" class="underline decoration-sky-500 hover:decoration-2">Monica</a>, an open source personal CRM, and <a href=" https://officelife.io" class="underline decoration-sky-500 hover:decoration-2">OfficeLife</a>, an open source HR system.</p>
+</div>
 
-<h2 class="fw4 f4">Comics</h2>
-@php
+<div class="mx-auto max-w-2xl flex p-4 sm:p-0 sm:mb-6">
+  <h2 class="font-bold mr-2">Sometimes I draw comics</h2>
+  <a href="" class="underline decoration-sky-500 hover:decoration-2">See all ({{ $comics->count() }})</a>
+</div>
+
+<div class=" mx-auto max-w-6xl mb-8 p-4 sm:p-0">
+  @php
   $latestComics = $comics->sortByDesc('id')->take(3)->all();
-@endphp
+  @endphp
 
-<ul class="list mb5 pl0">
-  @foreach ($latestComics as $comic)
-  <li class="h-entry mb3 lh-copy">
-    <img src="{{ $comic->img }}" class="db index-img">
-    <a href="{{ $comic->getUrl() }}" title="Read more - {{ $comic->title }}" class="p-name f5 fw5">{{ $comic->title }}</a>
-    <span class="db f7 gray">{{ date('F j, Y', $comic->date) }}</span>
-  </li>
-  @endforeach
-</ul>
+  <div class="grid grid-cols-3 gap-6">
+    @foreach ($latestComics as $comic)
+    <div class="mb-2 ">
+      <a href="{{ $comic->getUrl() }}"><img src="{{ $comic->img }}" class="db index-img"></a>
+      <a href="{{ $comic->getUrl() }}" title="Read more - {{ $comic->title }}" class="underline decoration-sky-500 hover:decoration-2">{{ $comic->title }}</a>
+      <span class="block text-xs text-gray-400">{{ date('F j, Y', $comic->date) }}</span>
+    </div>
+    @endforeach
+  </div>
+</div>
 
+<div class="mx-auto max-w-2xl p-4 sm:p-0 mb-14">
+  <div class="flex justify-between">
+    <h2 class="font-bold mb-6">Sometimes I write</h2>
+  </div>
 
-<h2 class="fw4 f4">Posts</h2>
+  <ul class="">
+    @foreach ($posts as $post)
+    <li class="mb-2">
+      <a href="{{ $post->getUrl() }}" title="Read more - {{ $post->title }}" class="underline decoration-sky-500 hover:decoration-2">{{ $post->title }}</a>
+      <span class="text-xs text-gray-400">{{ date('F j, Y', $post->date) }}</span>
+    </li>
+    @endforeach
+  </ul>
+</div>
 
-<ul class="list mb5 pl0">
-  @foreach ($posts as $post)
-  <li class="h-entry mb3 lh-copy">
-    <a href="{{ $post->getUrl() }}" title="Read more - {{ $post->title }}" class="p-name f5 fw5">{{ $post->title }}</a>
-    <span class="db f7 gray">{{ date('F j, Y', $post->date) }}</span>
-  </li>
-  @endforeach
-</ul>
+<div class="mx-auto max-w-2xl p-4 sm:p-0 mb-6">
+  <h2 class="font-bold mb-6">Elsewhere</h2>
 
-<h2 class="fw4 f4">Elsewhere</h2>
-
-<div class="mb5">
-  <div class="flex items-start mb3">
-    <div class="flex items-center mr3 lh-copy gray w3">
+  <div class="flex items-start mb-2">
+    <div class="flex items-center mr-4  gray w3">
       &#8203;
       Twitter
     </div>
-    <span class="lh-copy"><a href="https://twitter.com/maazarin">@maazarin</a></span>
+    <span class=""><a href="https://twitter.com/maazarin">@maazarin</a></span>
   </div>
-  <div class="flex items-start mb3">
-    <div class="flex items-center mr3 lh-copy gray w3">
+  <div class="flex items-start mb-2">
+    <div class="flex items-center mr-4  gray w3">
       &#8203;
       GitHub
     </div>
-    <span class="lh-copy"><a href="https://github.com/djaiss">@djaiss</a></span>
+    <span class=""><a href="https://github.com/djaiss">@djaiss</a></span>
   </div>
-  <div class="flex items-start mb3">
-    <div class="flex items-center mr3 lh-copy gray w3">
+  <div class="flex items-start mb-2">
+    <div class="flex items-center mr-4  gray w3">
       &#8203;
       Dribbble
     </div>
-    <span class="lh-copy"><a href="https://dribbble.com/djaiss">@djaiss</a></span>
+    <span class=""><a href="https://dribbble.com/djaiss">@djaiss</a></span>
   </div>
-  <div class=" flex items-start mb3">
-    <div class="flex items-center mr3 lh-copy gray w3">
+  <div class=" flex items-start mb-2">
+    <div class="flex items-center mr-4  gray w3">
       &#8203;
       Email
     </div>
-    <span class="lh-copy">
+    <span class="">
       <script language="JavaScript">
         unScramble("personalblog", "fastmail.fmizzle", "Send me an email", "", "");
       </script><noscript>Email address: personalblog/ÄT/fastmail/DÖT/fm</noscript>
