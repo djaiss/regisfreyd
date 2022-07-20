@@ -26,4 +26,4 @@ Before deploying the site to production, we need to compile the assets in a cert
 npm run production
 ```
 
-The site is hosted on Netlify. It’s awesome.
+The site is hosted on Vercel. It’s awesome.
