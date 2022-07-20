@@ -51,9 +51,6 @@ jobs:
               if: steps.cache-php.outputs.cache-hit != 'true'
               run: composer install -n --ignore-platform-reqs
 
-            - name: Create new production build of website
-              run: composer run build:prod
-
             - name: Create ZIP file of production build
               run: zip -r build_production.zip build_production/
 

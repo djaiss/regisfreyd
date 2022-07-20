@@ -7,7 +7,7 @@ return [
     'production' => false,
     'siteTitle' => 'Regis Freyd',
     'siteName' => 'Regis Freyd',
-    'siteDescription' => 'Regis Freyd',
+    'siteDescription' => 'Personal blog etc...',
     'siteAuthor' => 'Regis Freyd',
 
     // collections
