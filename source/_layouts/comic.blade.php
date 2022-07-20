@@ -26,7 +26,7 @@
 
   <div class="post mb-12">
     <a href="{{ $page->img }}">
-      <img src="{{ $page->img }}" alt="{{ $page->title }}" />
+      <img loading="lazy" src="{{ $page->img }}" alt="{{ $page->title }}" />
     </a>
   </div>
 

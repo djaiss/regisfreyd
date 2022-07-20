@@ -22,7 +22,7 @@
   <p class="text-xs mb-4 mt-1 text-gray-500">Published on <span class="dt-published" datetime="{{ date('Y-m-d 12:00:00', $page->date) }}">{{ date('F j, Y', $page->date) }}</span></p>
 
   @if ($page->cover_image)
-  <img src="{{ $page->cover_image }}" alt="{{ $page->title }} cover image" class="mb-2">
+  <img loading="lazy" src="{{ $page->cover_image }}" alt="{{ $page->title }} cover image" class="mb-2">
   @endif
 
   @if ($page->categories)

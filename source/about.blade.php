@@ -10,7 +10,7 @@
 @section('body')
 
 <div class="flex mb5">
-  <img src="/assets/img/picture.png" class="self-center br3 mr3" alt="avatar">
+  <img loading="lazy" src="/assets/img/picture.png" class="self-center br3 mr3" alt="avatar">
 
   <div>
     <p class="lh-copy">I'm a developer working mainly on OfficeLife and Monica in my spare time, living in Montréal.</p>
@@ -75,12 +75,12 @@
 <div class="flex mb3">
   <div class="bg-white pa2 dribbble mr3">
     <a href="https://dribbble.com/djaiss">
-      <img src="/assets/img/0085ddd22e50d7aa8f86d2c0e33943d1.png" alt="dribble image">
+      <img loading="lazy" src="/assets/img/0085ddd22e50d7aa8f86d2c0e33943d1.png" alt="dribble image">
     </a>
   </div>
   <div class="bg-white pa2 dribbble">
     <a href="https://dribbble.com/djaiss">
-      <img src="/assets/img/5ea7ad5f1ad3f4d88901c7026e671b39.png" alt="dribble image">
+      <img loading="lazy" src="/assets/img/5ea7ad5f1ad3f4d88901c7026e671b39.png" alt="dribble image">
     </a>
   </div>
 </div>
@@ -88,12 +88,12 @@
 <div class="flex mb5">
   <div class="bg-white pa2 dribbble mr3">
     <a href="https://dribbble.com/djaiss">
-      <img src="/assets/img/96fddb2d90d74f0ffe347c4ccac1d4be.png" alt="dribble image">
+      <img loading="lazy" src="/assets/img/96fddb2d90d74f0ffe347c4ccac1d4be.png" alt="dribble image">
     </a>
   </div>
   <div class="bg-white pa2 dribbble">
     <a href="https://dribbble.com/djaiss">
-      <img src="/assets/img/2d4708d0bd4bb064c343a9a02d15a988.png" alt="dribble image">
+      <img loading="lazy" src="/assets/img/2d4708d0bd4bb064c343a9a02d15a988.png" alt="dribble image">
     </a>
   </div>
 </div>
