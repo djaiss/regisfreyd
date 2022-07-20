@@ -26,3 +26,12 @@ body {
     line-height: 1.5;
     font-size: 18px;
 }
+
+.post a {
+    text-decoration-color: #0ea5e9;
+    text-decoration-line: underline
+}
+
+.post a:hover {
+    text-decoration-thickness: 2px;
+}
