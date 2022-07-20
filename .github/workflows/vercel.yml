@@ -1,12 +1,12 @@
 # integrate.yml
 name: Integrate
 
-# Run workflow when commits are pushed to pull requests or main branch
+# Run workflow when commits are pushed to pull requests or master branch
 on:
     pull_request: null
     push:
         branches:
-            - main
+            - master
 
 jobs:
     # Build Job
