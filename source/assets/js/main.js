@@ -1874,6 +1874,7 @@ var render = function render() {
   }, [_c("img", {
     staticClass: "h-4 w-4 max-w-none",
     attrs: {
+      loading: "lazy",
       src: "/assets/img/magnifying-glass.svg",
       alt: "search icon"
     }

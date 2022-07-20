@@ -50,9 +50,6 @@
         <li class="inline">
           <a href="/" class="mr-4 font-bold underline decoration-sky-500 hover:decoration-2">Home</a>
         </li>
-        <li class="inline">
-          <a href="/about" class="font-bold underline decoration-sky-500 hover:decoration-2">About</a>
-        </li>
       </ul>
       <ul class="">
         <li class="inline">

@@ -26,7 +26,7 @@
   <div class="grid grid-cols-3 gap-6 content-center">
     @foreach ($latestComics as $comic)
     <div class="mb-2">
-      <a href="{{ $comic->getUrl() }}"><img src="{{ $comic->img }}" alt="{{ $comic->title }}"></a>
+      <a href="{{ $comic->getUrl() }}"><img loading="lazy" src="{{ $comic->img }}" alt="{{ $comic->title }}"></a>
       <a href="{{ $comic->getUrl() }}" title="Read more - {{ $comic->title }}" class="underline decoration-sky-500 hover:decoration-2">{{ $comic->title }}</a>
       <span class="block text-xs text-gray-400">{{ date('F j, Y', $comic->date) }}</span>
     </div>

@@ -30,7 +30,7 @@
   <div class="grid grid-cols-3 gap-6">
     @foreach ($latestComics as $comic)
     <div class="mb-2 ">
-      <a href="{{ $comic->getUrl() }}"><img src="{{ $comic->img }}" alt="{{ $comic->title }}"></a>
+      <a href="{{ $comic->getUrl() }}"><img loading="lazy" src="{{ $comic->img }}" alt="{{ $comic->title }}"></a>
       <a href="{{ $comic->getUrl() }}" title="Read more - {{ $comic->title }}" class="underline decoration-sky-500 hover:decoration-2">{{ $comic->title }}</a>
       <span class="block text-xs text-gray-400">{{ date('F j, Y', $comic->date) }}</span>
     </div>
@@ -61,21 +61,21 @@
       &#8203;
       Twitter
     </div>
-    <span class=""><a href="https://twitter.com/maazarin">@maazarin</a></span>
+    <span class=""><a href="https://twitter.com/maazarin" class="underline decoration-sky-500 hover:decoration-2">@maazarin</a></span>
   </div>
-  <div class="flex items-start mb-2">
+  <div class=" flex items-start mb-2">
     <div class="flex items-center mr-4  gray w3">
       &#8203;
       GitHub
     </div>
-    <span class=""><a href="https://github.com/djaiss">@maazarin</a></span>
+    <span class=""><a href="https://github.com/djaiss" class="underline decoration-sky-500 hover:decoration-2">@maazarin</a></span>
   </div>
   <div class="flex items-start mb-2">
     <div class="flex items-center mr-4  gray w3">
       &#8203;
       Dribbble
     </div>
-    <span class=""><a href="https://dribbble.com/djaiss">@maazarin</a></span>
+    <span class=""><a href="https://dribbble.com/djaiss" class="underline decoration-sky-500 hover:decoration-2">@maazarin</a></span>
   </div>
   <div class=" flex items-start mb-2">
     <div class="flex items-center mr-4  gray w3">
