@@ -61,21 +61,21 @@
       &#8203;
       Twitter
     </div>
-    <span class=""><a href="https://twitter.com/maazarin">@maazarin</a></span>
+    <span class=""><a href="https://twitter.com/maazarin" class="underline decoration-sky-500 hover:decoration-2">@maazarin</a></span>
   </div>
-  <div class="flex items-start mb-2">
+  <div class=" flex items-start mb-2">
     <div class="flex items-center mr-4  gray w3">
       &#8203;
       GitHub
     </div>
-    <span class=""><a href="https://github.com/djaiss">@maazarin</a></span>
+    <span class=""><a href="https://github.com/djaiss" class="underline decoration-sky-500 hover:decoration-2">@maazarin</a></span>
   </div>
   <div class="flex items-start mb-2">
     <div class="flex items-center mr-4  gray w3">
       &#8203;
       Dribbble
     </div>
-    <span class=""><a href="https://dribbble.com/djaiss">@maazarin</a></span>
+    <span class=""><a href="https://dribbble.com/djaiss" class="underline decoration-sky-500 hover:decoration-2">@maazarin</a></span>
   </div>
   <div class=" flex items-start mb-2">
     <div class="flex items-center mr-4  gray w3">
