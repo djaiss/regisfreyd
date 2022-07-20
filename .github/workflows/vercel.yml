@@ -34,9 +34,6 @@ jobs:
               env:
                   CI: true
 
-            - name: Create production build of CSS and JS
-              run: yarn run production
-
             - name: Restore Composer dependencies
               id: cache-php
               uses: actions/cache@v2
@@ -50,6 +47,10 @@ jobs:
             - name: Install Composer dependencies
               if: steps.cache-php.outputs.cache-hit != 'true'
               run: composer install -n --ignore-platform-reqs
+
+            - name: Create production build of CSS and JS
+              run: yarn run production
+
 
             - name: Create ZIP file of production build
               run: zip -r build_production.zip build_production/
