@@ -16,7 +16,7 @@ return [
             'author' => 'Regis Freyd',
             'twitter_author' => 'https://twitter.com/maazarin',
             'sort' => '-date',
-            'path' => '{date|Y-m-d}-{slug}',
+            'path' => 'posts/{date|Y-m-d}-{slug}',
         ],
         'comics' => [
             'author' => 'Regis Freyd',
