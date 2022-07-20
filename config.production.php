@@ -1,6 +1,6 @@
 <?php
 
 return [
-    'baseUrl' => 'https://fucl.com',
+    'baseUrl' => 'https://regisfreyd.com',
     'production' => true,
 ];
