@@ -7,22 +7,22 @@ return [
     'production' => false,
     'siteTitle' => 'Regis Freyd',
     'siteName' => 'Regis Freyd',
-    'siteDescription' => 'Regis Freyd',
+    'siteDescription' => 'Personal blog etc...',
     'siteAuthor' => 'Regis Freyd',
 
     // collections
     'collections' => [
         'posts' => [
-            'author' => 'Regis Freyd', // Default author, if not provided in a post
-            'twitter_author' => 'https://twitter.com/djaiss',
-            'sort' => '-date',
-            'path' => '{slug}',
-        ],
-        'zines' => [
             'author' => 'Regis Freyd',
-            'twitter_author' => 'https://twitter.com/djaiss',
+            'twitter_author' => 'https://twitter.com/maazarin',
             'sort' => '-date',
-            'path' => '/zines/{slug}',
+            'path' => 'posts/{date|Y-m-d}-{slug}',
+        ],
+        'comics' => [
+            'author' => 'Regis Freyd',
+            'twitter_author' => 'https://twitter.com/maazarin',
+            'sort' => '-date',
+            'path' => 'comics/{id}/{slug}',
         ],
         'categories' => [
             'path' => '/blog/categories/{filename}',
