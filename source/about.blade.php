@@ -113,14 +113,14 @@
       &#8203;
       GitHub
     </div>
-    <span class="lh-copy"><a href="https://github.com/djaiss">@djaiss</a></span>
+    <span class="lh-copy"><a href="https://github.com/djaiss">@maazarin</a></span>
   </div>
   <div class="flex items-start mb3">
     <div class="flex items-center mr3 lh-copy gray w3">
       &#8203;
       Dribbble
     </div>
-    <span class="lh-copy"><a href="https://dribbble.com/djaiss">@djaiss</a></span>
+    <span class="lh-copy"><a href="https://dribbble.com/djaiss">@maazarin</a></span>
   </div>
   <div class=" flex items-start mb3">
     <div class="flex items-center mr3 lh-copy gray w3">
