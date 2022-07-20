@@ -19,7 +19,7 @@
 
 <div class="mx-auto max-w-2xl flex p-4 sm:p-0 sm:mb-6">
   <h2 class="font-bold mr-2">Sometimes I draw comics</h2>
-  <a href="" class="underline decoration-sky-500 hover:decoration-2">See all ({{ $comics->count() }})</a>
+  <a href="/comics" class="underline decoration-sky-500 hover:decoration-2">See all ({{ $comics->count() }})</a>
 </div>
 
 <div class=" mx-auto max-w-6xl mb-8 p-4 sm:p-0">

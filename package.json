@@ -5,14 +5,8 @@
         "staging": "cross-env NODE_ENV=staging node_modules/webpack/bin/webpack.js --progress --hide-modules --env=staging --config=node_modules/laravel-mix/setup/webpack.config.js",
         "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --progress --hide-modules --env=production --config=node_modules/laravel-mix/setup/webpack.config.js",
         "dev": "npm run local",
-        "watch": "npm run local -- --watch",
-        "precommit": "lint-staged"
+        "watch": "npm run local -- --watch"
     },
-    "lint-staged": {
-    "*.{png,jpeg,jpg,gif,svg}": [
-        "node ./imagemin.js",
-        "git add"
-    ]},
     "devDependencies": {
         "axios": "^0.18.0",
         "browser-sync": "^2.26.14",
@@ -23,12 +17,6 @@
         "hasbin": "^1.2.3",
         "highlight.js": "^9.18.5",
         "husky": "^0.14.3",
-        "imagemin": "^5.3.1",
-        "imagemin-gifsicle": "^5.2.0",
-        "imagemin-jpegtran": "^5.0.2",
-        "imagemin-optipng": "^5.2.1",
-        "imagemin-pngquant": "^5.0.1",
-        "imagemin-svgo": "^5.2.2",
         "imports-loader": "^0.7.1",
         "laravel-mix": "^4.0.0",
         "laravel-mix-purgecss": "^3.0.0",
