@@ -137,20 +137,20 @@ jobs:
                   # the production build artifact.
                   working-directory: ./build_production/build_production
 
-            # Set the deployment status in GitHub to finished.
-            - name: Update Deployment Status
-              uses: bobheadxi/deployments@master
-              if: always()
-              with:
-                  step: finish
-                  token: ${{ secrets.GITHUB_TOKEN }}
-                  status: ${{ job.status }}
-                  # We use the deployment ID of a previous step here
-                  deployment_id: ${{ steps.deployment_pr.outputs.deployment_id }}
-                  # We pass Vercel's own preview URL to the environment. This
-                  # way we can easily visit the deployed site from the pull
-                  # request.
-                  env_url: ${{ steps.vercel_action_pr.outputs.preview-url }}
+            # # Set the deployment status in GitHub to finished.
+            # - name: Update Deployment Status
+            #   uses: bobheadxi/deployments@master
+            #   if: always()
+            #   with:
+            #       step: finish
+            #       token: ${{ secrets.GITHUB_TOKEN }}
+            #       status: ${{ job.status }}
+            #       # We use the deployment ID of a previous step here
+            #       deployment_id: ${{ steps.deployment_pr.outputs.deployment_id }}
+            #       # We pass Vercel's own preview URL to the environment. This
+            #       # way we can easily visit the deployed site from the pull
+            #       # request.
+            #       env_url: ${{ steps.vercel_action_pr.outputs.preview-url }}
 
             - name: Delete production build artifact
               uses: geekyeggo/delete-artifact@v1
