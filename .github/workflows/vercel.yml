@@ -160,10 +160,10 @@ jobs:
 
     # Deploy Production Job
     # This job will deploy the website to production and will only be executed
-    # when a commit is pushed to the default `main`-branch.
+    # when a commit is pushed to the default `master`-branch.
     deploy_prod:
         name: Deployment
-        if: github.event.ref == 'refs/heads/main'
+        if: github.event.ref == 'refs/heads/master'
         runs-on: ubuntu-latest
 
         # The job is only run, when the `build`-job is finished.
