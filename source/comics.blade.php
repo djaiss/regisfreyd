@@ -13,7 +13,7 @@
 @section('body')
 
 <div class="mx-auto max-w-2xl mb-4 sm:mb-20 p-4 sm:p-0">
-  <div class="mb-4">&LeftArrow; <a href="/comics" class="text-sm underline decoration-sky-500 hover:decoration-2">Back to homepage</a></div>
+  <div class="mb-4">&LeftArrow; <a href="/" class="text-sm underline decoration-sky-500 hover:decoration-2">Back to homepage</a></div>
 
   <p>These are the small comics I draw with an iPad and a pencil. They are meant to make you smile.</p>
 </div>
