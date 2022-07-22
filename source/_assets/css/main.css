@@ -8,25 +8,6 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
-.post ol, .post ul {
-    list-style-type: decimal;
-    margin-left: 1.5rem;
-    margin-top: 6px;
-    margin-bottom: 6px;
-}
-
-.post p {
-    margin-top: 8px;
-    margin-bottom: 8px;
-}
-
-.post h2 {
-    font-weight: 500;
-    margin-top: 20px;
-    line-height: 1.5;
-    font-size: 18px;
-}
-
 .post a {
     text-decoration-color: #0ea5e9;
     text-decoration-line: underline
