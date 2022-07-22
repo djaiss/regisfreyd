@@ -17,7 +17,7 @@
 
 @section('body')
 <div class="mx-auto max-w-2xl mb-4 sm:mb-20 p-4 sm:p-0">
-  <div class="mb-4">&LeftArrow; <a href="/" class="text-sm underline decoration-sky-500 hover:decoration-2">Back to homepage</a></div>
+  <div class="mb-4">&LeftArrow; <a href="/comics" class="text-sm underline decoration-sky-500 hover:decoration-2">Back to comics</a></div>
   <h1 class="p-name mb0 lh-copy font-bold text-xl">
     {{ $page->title }}
     <span class="bg-blue-100 text-blue-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800"># {{ $page->id }}</span>
