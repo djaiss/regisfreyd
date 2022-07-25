@@ -28,7 +28,7 @@
   @endforeach
   @endif
 
-  <div class="post mb-12">
+  <div class="prose post mb-12">
     @yield('content')
   </div>
 
