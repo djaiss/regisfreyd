@@ -1,7 +1,7 @@
 ---
 extends: _layouts.comic
 section: content
-id: 44
+id: 45
 title: Git force push
 date: 2022-06-18
 slug: git-force-push
