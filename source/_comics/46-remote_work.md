@@ -7,5 +7,5 @@ date: 2022-10-04
 slug: remote-work
 categories:
 description: How I am sure most of the people working remotely abroad really feel.
-img: /assets/img/comics/remove_work.png
+img: /assets/img/comics/remote_work.png
 ---
