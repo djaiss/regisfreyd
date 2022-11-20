@@ -53,6 +53,9 @@
       </ul>
       <ul class="">
         <li class="inline">
+            <a rel="me" class="mr-2 font-bold underline decoration-sky-500 hover:decoration-2" href="https://phpc.social/@regis">Mastodon</a>
+        </li>
+        <li class="inline">
           <a href="https://twitter.com/maazarin" class="font-bold underline decoration-sky-500 hover:decoration-2">Twitter</a>
         </li>
       </ul>
