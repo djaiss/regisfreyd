@@ -5,11 +5,6 @@
 <meta property="og:type" content="article" />
 <meta property="og:url" content="{{ $page->getUrl() }}" />
 <meta property="og:description" content="{{ $page->description }}" />
-
-<meta name="twitter:card" content="summary">
-<meta name="twitter:site" content="@maazarin">
-<meta name="twitter:title" content="{{ $page->title }}" />
-<meta name="twitter:description" content="{{ $page->description }}" />
 @endpush
 
 @section('body')
