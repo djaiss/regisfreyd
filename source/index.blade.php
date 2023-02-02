@@ -6,8 +6,6 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="{{ $page->getUrl() }}" />
 <meta property="og:description" content="{{ $page->siteDescription }}" />
-<meta property="twitter:site" content="@maazarin">
-<meta property="twitter:creator" content="@maazarin">
 @endpush
 
 @section('body')
@@ -59,9 +57,9 @@
   <div class="flex items-start mb-2">
     <div class="flex items-center mr-4  gray w3">
       &#8203;
-      Twitter
+      Mastodon
     </div>
-    <span class=""><a href="https://twitter.com/maazarin" class="underline decoration-sky-500 hover:decoration-2">@maazarin</a></span>
+    <span class=""><a href="https://phpc.social/@regis" class="underline decoration-sky-500 hover:decoration-2">@regis</a></span>
   </div>
   <div class=" flex items-start mb-2">
     <div class="flex items-center mr-4  gray w3">
@@ -75,7 +73,7 @@
       &#8203;
       Dribbble
     </div>
-    <span class=""><a href="https://dribbble.com/djaiss" class="underline decoration-sky-500 hover:decoration-2">@maazarin</a></span>
+    <span class=""><a href="https://dribbble.com/djaiss" class="underline decoration-sky-500 hover:decoration-2">@djaiss</a></span>
   </div>
   <div class=" flex items-start mb-2">
     <div class="flex items-center mr-4  gray w3">
