@@ -1,7 +1,7 @@
 @extends('_layouts.master')
 
 @push('meta')
-<meta property="og:site_name" content="Regis Freyd" />
+<meta property="og:site_name" content="100xdeveloper" />
 <meta property="og:title" content="{{ $page->title }}" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="{{ $page->getUrl() }}" />
