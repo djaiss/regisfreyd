@@ -5,21 +5,21 @@ use Illuminate\Support\Str;
 return [
     'baseUrl' => 'http://localhost:3000',
     'production' => false,
-    'siteTitle' => 'Regis Freyd',
-    'siteName' => 'Regis Freyd',
+    'siteTitle' => 'Regis',
+    'siteName' => 'Regis',
     'siteDescription' => 'Personal blog etc...',
-    'siteAuthor' => 'Regis Freyd',
+    'siteAuthor' => 'Regis',
 
     // collections
     'collections' => [
         'posts' => [
-            'author' => 'Regis Freyd',
+            'author' => 'Regis',
             'twitter_author' => 'https://twitter.com/maazarin',
             'sort' => '-date',
             'path' => 'posts/{date|Y-m-d}-{slug}',
         ],
         'comics' => [
-            'author' => 'Regis Freyd',
+            'author' => 'Regis',
             'twitter_author' => 'https://twitter.com/maazarin',
             'sort' => '-date',
             'path' => 'comics/{id}/{slug}',
